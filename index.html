@@ -6,28 +6,88 @@
     <title>THE MOORE SIGNAL // Poetry Through Play</title>
     <style>
         /* --- CORE TERMINAL STYLES --- */
-        body { background-color: #050505; color: #b0b0b0; font-family: 'Courier New', Courier, monospace; display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; padding: 40px 20px; line-height: 1.6; }
+        body { 
+            background-color: #050505; 
+            color: #b0b0b0; 
+            font-family: 'Courier New', Courier, monospace; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 40px 20px; 
+            line-height: 1.6; 
+        }
+        
         header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 700px; }
         header h1 { letter-spacing: 8px; color: #ffffff; margin-bottom: 10px; font-size: 1.5rem; pointer-events: none; }
+        
         .status-line { color: #00ffcc; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; }
         .sys-info { font-size: 0.65rem; color: #444; line-height: 1.4; text-transform: uppercase; }
 
         /* --- THE SETLIST --- */
-        .setlist-container { background: #080808; border: 1px solid #1a1a1a; padding: 20px; width: 100%; max-width: 660px; margin: 20px 0 60px 0; font-size: 0.75rem; }
-        .setlist-title { color: #00ffcc; border-bottom: 1px solid #1a1a1a; padding-bottom: 8px; margin-bottom: 15px; letter-spacing: 3px; font-weight: bold; }
-        .track-entry { display: flex; justify-content: space-between; margin-bottom: 6px; color: #444; letter-spacing: 1px; }
+        .setlist-container {
+            background: #080808;
+            border: 1px solid #1a1a1a;
+            padding: 20px;
+            width: 100%;
+            max-width: 660px;
+            margin: 20px 0 40px 0;
+            font-size: 0.75rem;
+        }
+        .setlist-title {
+            color: #00ffcc;
+            border-bottom: 1px solid #1a1a1a;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+        .track-entry {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            color: #444;
+            letter-spacing: 1px;
+        }
         .track-active { color: #ffffff; }
+
+        /* --- ASCII UNIT STYLING --- */
+        .ascii-container {
+            width: 100%; 
+            max-width: 700px; 
+            display: flex; 
+            justify-content: center; 
+            margin: 40px 0;
+        }
+        pre {
+            font-family: 'Courier New', monospace; 
+            font-size: 1.1rem; 
+            color: #ffffff; 
+            line-height: 1.2; 
+            pointer-events: none; 
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+        }
 
         /* --- GALLERY ITEMS --- */
         .gallery-item { max-width: 700px; border-bottom: 1px solid #1a1a1a; padding: 60px 0; width: 100%; }
-        img { width: 100%; border: 1px solid #222; margin-bottom: 30px; filter: grayscale(10%) contrast(110%); }
-        .haiku { font-family: 'Georgia', serif; font-style: italic; font-size: 1.3rem; color: #ffffff; text-align: center; margin: 30px 0; letter-spacing: 1px; line-height: 1.8; }
+        
+        .haiku { 
+            font-family: 'Georgia', serif; 
+            font-style: italic; 
+            font-size: 1.3rem; 
+            color: #ffffff; 
+            text-align: center; 
+            margin: 30px 0; 
+            letter-spacing: 1px; 
+            line-height: 1.8; 
+        }
         .metadata { font-size: 0.7rem; color: #00ffcc; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 2px; }
         .archivist-note { font-size: 0.85rem; color: #666; border-left: 1px solid #333; padding-left: 15px; margin-top: 20px; font-style: normal; }
 
-        /* --- CD COVER WITH TMA PULSE (LOG #002) --- */
+        /* --- CD COVER PULSE (LOG #002) --- */
         .cd-cover {
-            width: 100%; max-width: 500px; aspect-ratio: 1 / 1;
+            width: 100%; max-width: 400px; aspect-ratio: 1 / 1;
             margin: 0 auto 30px auto; background: #000;
             border: 1px solid #222; display: flex; align-items: center;
             justify-content: center; position: relative; overflow: hidden;
@@ -55,7 +115,6 @@
     <h1>THE MOORE SIGNAL</h1>
     <p class="status-line">Status: 🟢 Transmission Active</p>
     <div class="sys-info">Unit: MooreSignal // Source: Virtual Performance // Protocol: High-Sync</div>
-    
 </header>
 
 <div class="setlist-container">
@@ -65,9 +124,8 @@
     <div class="track-entry" style="opacity: 0.2;"><span>03. SILENCE_REFLECTIVE</span><span>[ STANDBY ]</span></div>
 </div>
 
-    <!-- ASCII CHARACTER RECALIBRATION -->
-<div style="width: 100%; max-width: 700px; display: flex; justify-content: center; margin: 20px 0;">
-    <pre style="font-family: 'Courier New', monospace; font-size: 1.2rem; color: #ffffff; line-height: 1.2; pointer-events: none; text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);">
+<div class="ascii-container">
+    <pre>
           (      )
           /◕   ◕\
           \  ▿  /
@@ -87,16 +145,20 @@
     </pre>
 </div>
 
-
 <!-- LOG #001 -->
 <div class="gallery-item" id="log-001">
     <div class="metadata">LOG #001 // SMOOTH BEATS</div>
-    
-    <div class="haiku">Submerged in each song.<br>Blending the soul with rhythm—<br>Melting in smooth beats</div>
-    <div class="archivist-note"><strong>Archivist’s Log:</strong> Style ~ Pop | Frequency: High | Ref: 2026.02.08</div>
+    <div class="haiku">
+        Submerged in each song.<br>
+        Blending the soul with rhythm—<br>
+        Melting in smooth beats
+    </div>
+    <div class="archivist-note">
+        <strong>Archivist’s Log:</strong> Style ~ Pop | Frequency: High-Sync | Ref: 2026.02.08
+    </div>
 </div>
 
-<!-- LOG ENCRYPTED (PULSING CD COVER) -->
+<!-- LOG #002 (PENDING) -->
 <div class="gallery-item" id="log-002">
     <div class="metadata">LOG ENCRYPTED // PENDING TRANSMISSION</div>
     <div class="cd-cover">
@@ -108,7 +170,9 @@
         Pulsing through tomorrow's heart.<br>
         — Manifesting soon —
     </div>
-    <div class="archivist-note"><strong>Status:</strong> Analyzing frequencies of the signal — Stay tuned! |</div>
+    <div class="archivist-note">
+        <strong>Status:</strong> Analyzing frequencies of the signal — Stay tuned!
+    </div>
 </div>
 
 <footer>
