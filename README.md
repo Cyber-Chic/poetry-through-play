@@ -12,7 +12,7 @@ Each contemporary haiku in this collection surfaced after a virtual performance.
 ---
 
 ### 📂 ARCHIVAL TRANSMISSIONS (LOGS)
-*   [ 📡 **LOG #001: SMOOTH** ](./log-001/index.html) — *2026.02.08 // "Submerged in each song..."*
+*   [ 📡 **Log #001: SMOOTH** ](./log-001/index.html) — *2026.02.08 // "Submerged in each song..."*
 *   [ 📡 **LOG #002: TBD** ](./log-002/index.html) — *Coming Soon // "Stay tuned!"*
 
 ---
