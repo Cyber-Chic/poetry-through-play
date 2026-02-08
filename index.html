@@ -30,6 +30,35 @@
             animation: pulse 2s infinite ease-in-out;
             color: #00ffcc !important; /* Forces the text to be neon green/cyan while pulsing */
         }
+
+		.setlist-container {
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.setlist-title {
+    color: #00ffcc;
+    border-bottom: 1px solid #00ffcc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+.track-entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: #666;
+}
+.track-active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
     </style>
 </head>
 <body>
@@ -43,6 +72,30 @@
     </div>
 </header>
 
+<div class="setlist-container">
+    <div class="setlist-title">📡 CURRENT SETLIST // SIGNAL PERFORMANCE</div>
+    
+    <div class="track-entry track-active">
+        <span>01. SMOOTH BEATS</span>
+        <span>STATUS: SYNCHRONIZED</span>
+    </div>
+    
+    <div class="track-entry">
+        <span>02. [ UNKNOWN_VIBRATION ]</span>
+        <span>STATUS: ENCRYPTED</span>
+    </div>
+    
+    <div class="track-entry" style="opacity: 0.3;">
+        <span>03. SILENCE_REFLECTIVE</span>
+        <span>STATUS: STANDBY</span>
+    </div>
+    
+    <div class="sys-info" style="margin-top:20px; color:#444;">
+        *Note: Setlist reflects live virtual frequencies from the Idol Party 2 engine.
+    </div>
+</div>
+
+	
 <!-- SYNCHRONIZATION LOG #001 -->
 <div class="gallery-item" id="log-001">
     <div class="metadata">Log #001 // SMOOTH BEATS | Contemporary Haiku</div>
