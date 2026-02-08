@@ -5,9 +5,9 @@
 *Figure 0.0: The MooreSignal unit in synchronization.*
 
 ### 🎭 THE MISSION
-This is part of the **Poetry Through Play** series. As a poet, gamer, and music lover, I questioned the possibility of obtaining meaningful connection through shared gameplay. The answers reside deep in this repository. 
+This is part of the **Poetry Through Play** series. As a poet, gamer, and music lover, I questioned the possibility of obtaining meaningful life connections with **virtual** gameplay serving as the catalyst. The answers reside deep in this repository. 
 
-Each contemporary haiku in this collection surfaced after a virtual performance. The songs that accompanied them made me constantly reevaluate my evolving relationship with life and music, bringing new words to the back of my lips. Each shot in this collection preserves a **momentary time blip**—an instance where indelible threads encapsulated the digital and physical world.
+Each contemporary haiku in this collection surfaced after personalized experiences ranging from my virtual performances to exploring the richness of this **immaterial** realm. The beautifully rhythmic gameplay and electrifying songs made me constantly reevaluate my evolving relationship with life and music, bringing new words to the back of my lips. Each shot in this collection preserves a **momentary time blip**—an instance where indelible threads encapsulated the digital and physical world.
 
 ---
 
