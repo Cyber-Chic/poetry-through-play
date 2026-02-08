@@ -20,10 +20,10 @@
 
 
 
-*Figure 0.0: The MooreSignal unit in synchronization.*
+*Figure 0.0: The MooreSignal unit in synchronization. ACCII Recalibration Of my In game character.*
 
 ### 🎭 THE MISSION
-This is part of the **Poetry Through Play** series. As a poet, gamer, and music lover, I questioned the possibility of obtaining meaningful life connections with **virtual** gameplay serving as the catalyst. The answers reside deep in this repository. Each contemporary haiku in this collection surfaced after personalized experiences ranging from my virtual performances to exploring the richness of this **immaterial** realm. The beautifully rhythmic gameplay and electrifying songs made me constantly reevaluate my evolving relationship with life and music, bringing new words to the back of my lips. Each shot in this collection preserves a **momentary time blip**—an instance where indelible threads encapsulated the digital and physical world.
+This is part of the **Poetry Through Play** series. As a poet, gamer, and music lover, I questioned the possibility of obtaining meaningful life connections with **virtual** gameplay serving as the catalyst. The answers reside deep in this repository. Each contemporary haiku in this collection surfaced after my personalized experiences participating in a dance centric MMO (massive multiplayer online) game.  These ranged from my virtual performances to exploring the richness of this **immaterial** realm. The beautifully rhythmic gameplay and electrifying songs made me constantly reevaluate my evolving relationship with life and music, bringing new words to the back of my lips. Each track in this collection preserves a **momentary time blip**—an instance where indelible threads encapsulated the digital and physical world.
 
 ---
 
@@ -38,7 +38,14 @@ This is part of the **Poetry Through Play** series. As a poet, gamer, and music 
 ---
 
 ### 🛡️ TECHNICAL PROVENANCE
-Visual assets rendered via the **Idol Party 2** engine. Character styling, poetic synchronization, and performance by **The Archivist**. This is an artistic inquiry into virtual identity, not a claim of software development.
+**Creative Architecture:** Curated by **The Archivist** in collaboration with **Google Gemini**.  
+**Concept Origin:** The "MooreSignal" unit is a digital manifestation based on the Archivist’s performance identity within the *Idol Party 2* engine.  
+
+All poetic works, ASCII recalibrations, and archival logs are the original intellectual property of the Archivist. This project is a minimalist inquiry into virtual identity, not a claim of software development.
+ 
+
+This repository represents an artistic inquiry into virtual identity and digital-to-physical synchronization. All poetic works, ASCII recalibrations, and performance logs are the intellectual property of the Archivist. This is a creative deployment, not a claim of software development.
+
 
 ---
 
