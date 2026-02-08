@@ -1,11 +1,13 @@
 # 📡 POETRY THROUGH PLAY // THE MOORE SIGNAL
 **Series Status:** 🟢 **ACTIVE // [ VOLUME 1 ]**
 
+<div class="ascii-container">
+    <pre>
           (      )
           /◕   ◕\
           \  ▿  /
            \   /  
-           /   \
+           \   /  
           /|   |\
          / |   | \ 🎤   ✧
            |   |   |        ♬
@@ -14,10 +16,11 @@
            |   |   |
           /     \  |   ✧
          (_______) |        ♬
-   __________________________
-  [ ⚡  📡  MooreSignal  📡  ⚡ ] 
+   __________|   |__|________
+  [ ⚡  📡  MooreSignal  📡  ⚡ ]
   ««««««««««««««»»»»»»»»»»»»»
-
+    </pre>
+</div>
 
 
 *Figure 0.0: The MooreSignal unit in synchronization. ACCII Recalibration Of my In game character.*
