@@ -14,8 +14,8 @@ This is part of the **Poetry Through Play** series. As a poet, gamer, and music 
 *   📡 **[ SYNCHRONIZATION_GALLERY ](https://cyber-chic.github.io/poetry-through-play/)**
     *   *Series: Poetry Through Play*
     *   *Status: Internal Performance Logs // Unit: MooreSignal*
-    *   `#001` - Submerged (Verified)
-    *   `#002` - [Encrypted]
+    *   `Volume 1` - (Verified)
+    *   `Volume 2` - [Encrypted]
 
 ---
 
