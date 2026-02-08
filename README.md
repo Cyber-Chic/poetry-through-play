@@ -15,8 +15,9 @@
           /     \  |   ✧
          (_______) |        ♬
    __________________________
-  [ ⚡  📡  MooreSignal  📡  ⚡ ]
+  [ ⚡  📡  MooreSignal  📡  ⚡ ] 
   ««««««««««««««»»»»»»»»»»»»»
+
 
 
 *Figure 0.0: The MooreSignal unit in synchronization. ACCII Recalibration Of my In game character.*
