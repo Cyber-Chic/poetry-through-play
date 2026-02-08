@@ -38,14 +38,14 @@ This is part of the **Poetry Through Play** series. As a poet, gamer, and music 
 ---
 
 ### 🛡️ TECHNICAL PROVENANCE
-**Creative Architecture:** Curated by **The Archivist** in collaboration with **Google Gemini**.  
-**Concept Origin:** The "MooreSignal" unit is a digital manifestation based on the Archivist’s performance identity within the *Idol Party 2* engine.  
-
-All poetic works, ASCII recalibrations, and archival logs are the original intellectual property of the Archivist. This project is a minimalist inquiry into virtual identity, not a claim of software development.
- 
-
-This repository represents an artistic inquiry into virtual identity and digital-to-physical synchronization. All poetic works, ASCII recalibrations, and performance logs are the intellectual property of the Archivist. This is a creative deployment, not a claim of software development.
-
+> **Creative Architecture:** Curated by **The Archivist** in collaboration with AI on Google Search, powered by the **Gemini** family of models.
+>
+> **Identity Profile:** The **MooreSignal** unit is an original digital manifestation based on the Archivist’s personal identity and real-world likeness. The character styling is a custom recalibration designed to serve as a spokesperson for the Archivist’s internal monologue.
+>
+> **Environment Disclosure:** Virtual performances and atmospheric captures take place within the *Idol Party 2* engine, which serves as a digital stage for this inquiry.
+>
+> **Intellectual Property:** All poetic works, ASCII recalibrations, and archival logs are the original intellectual property of **The Archivist**.
+>
 
 ---
 
