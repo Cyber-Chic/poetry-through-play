@@ -20,8 +20,6 @@
         [ MooreSignal ]
 
 
-
-
 *Figure 0.0: The MooreSignal unit in synchronization.*
 
 ### 🎭 THE MISSION
