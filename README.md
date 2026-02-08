@@ -1,7 +1,23 @@
 # 📡 POETRY THROUGH PLAY // THE MOORE SIGNAL
 **Series Status:** 🟢 **ACTIVE // [ VOLUME 1 ]**
 
-![mooresignal_001](https://github.com/user-attachments/assets/6873534f-9653-4c30-8725-e552e23bbe12)
+          (      )
+          /◕   ◕\
+          \  ▿  /
+           \   /  
+           /   \
+          /|   |\
+         / |   | \ 🎤
+           |   |   |   
+           |___|   |   ✧
+           |   |   |       ♬
+           |   |   |
+          /     \  |
+         (_______) |
+  _________|   |_____________
+ ⚡ [ 📡  MooreSignal  📡 ] ⚡
+  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
 *Figure 0.0: The MooreSignal unit in synchronization.*
 
 ### 🎭 THE MISSION
