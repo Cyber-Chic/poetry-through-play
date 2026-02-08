@@ -1,7 +1,6 @@
 # 📡 POETRY THROUGH PLAY // THE MOORE SIGNAL
 **Series Status:** 🟢 **ACTIVE // [ VOLUME 1 ]**
 
-```text
           (      )
           /◕   ◕\
           \  ▿  /
@@ -15,9 +14,10 @@
            |   |   |
           /     \  |   ✧
          (_______) |        ♬
-           |   |   |             🌟
-           |_|_|_| | 
-        [ MooreSignal ]
+   __________|   |__|________
+  [ ⚡  📡  MooreSignal  📡  ⚡ ]
+  ««««««««««««««»»»»»»»»»»»»»
+
 
 
 *Figure 0.0: The MooreSignal unit in synchronization.*
