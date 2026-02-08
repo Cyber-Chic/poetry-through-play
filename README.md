@@ -1,8 +1,7 @@
 # 📡 POETRY THROUGH PLAY // THE MOORE SIGNAL
 **Series Status:** 🟢 **ACTIVE // [ VOLUME 1 ]**
 
-<div class="ascii-container">
-    <pre>
+<pre>
           (      )
           /◕   ◕\
           \  ▿  /
@@ -19,7 +18,9 @@
    ______|       |_|______________
   [ ⚡  📡  MooreSignal  📡  ⚡ ]
   ««««««««««««««»»»»»»»»»»»»»»»»»»
-    </pre>
+</pre>
+
+
 </div>
 
 
