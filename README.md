@@ -43,11 +43,18 @@ This is part of the **Poetry Through Play** series. As a poet, gamer, and music 
 
 ### 🛡️ TECHNICAL PROVENANCE
 
-*   **Creative Architecture:** Curated by **The Archivist** in collaboration with AI on Google Search, powered by the Gemini family of models.
-*   **Identity Profile:** The MooreSignal unit is an original digital manifestation based on the Archivist’s personal identity and real-world likeness. The character styling is a custom recalibration designed to serve as a spokesperson for the Archivist’s internal monologue.
-*   **Environment Disclosure:** Virtual performances and atmospheric captures take place within the Idol Party 2 engine, which serves as a digital stage for this inquiry.
-*   **Intellectual Property & Safe Harbor:** All poetic works, ASCII recalibrations, and archival logs are the original intellectual property of **The Archivist**. The base assets are the property of their respective owners; this project is an independent creative work and does not claim ownership of the underlying software or its commercial assets.
+**Creative Architecture**  
+Curated by **The Archivist** in collaboration with AI on Google Search, powered by the [Gemini family of models](https://deepmind.google) & Inspired by experiences within virtual social environments such as Idol Party 2.
 
+**Identity Profile**  
+The `MooreSignal` unit is an original digital manifestation based on the Archivist’s personal identity. The character styling is a custom **ASCII recalibration** designed to serve as a spokesperson for internal monologue and poetic expression.
+
+**Environment Disclosure**  
+These archival logs and atmospheric reflections are inspired by personal experiences within virtual social landscapes, which serves as a digital backdrop for this inquiry.
+
+> [!IMPORTANT]
+> **Safe Harbor & Intellectual Property**  
+> This project is a non-commercial, independent literary and artistic work. All poetic works, ASCII recalibrations, and archival logs are the original intellectual property of **The Archivist**. References to external virtual environments are for contextual and narrative purposes only. This project does not use, distribute, or claim ownership of any game assets, software code, or proprietary trademarks belonging to third-party developers.
 
 ---
 
