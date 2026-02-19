@@ -20,23 +20,25 @@
         }
         
         header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 700px; }
-        header h1 { letter-spacing: 8px; color: #ffffff; margin-bottom: 10px; font-size: 1.5rem; pointer-events: none; }
+        header h1 { letter-spacing: 8px; color: #ffffff; margin-bottom: 10px; font-size: 1.5rem; text-shadow: 0 0 15px rgba(255,255,255,0.2); }
         
-        .status-line { color: #00ffcc; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; }
-        .sys-info { font-size: 0.65rem; color: #444; line-height: 1.4; text-transform: uppercase; }
+        .status-line { color: #00e5ff; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; }
+        .sys-info { font-size: 0.65rem; color: #555; line-height: 1.4; text-transform: uppercase; }
 
-        /* --- THE SETLIST --- */
+        /* --- THE SETLIST (NEON BLUE) --- */
         .setlist-container {
-            background: #080808;
-            border: 1px solid #1a1a1a;
+            background: #0a0a0a;
+            border: 1px solid #00bfff;
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
             padding: 20px;
             width: 100%;
-            max-width: 660px;
+            max-width: 600px;
             margin: 20px 0 40px 0;
             font-size: 0.75rem;
+            border-radius: 4px;
         }
         .setlist-title {
-            color: #00ffcc;
+            color: #00e5ff;
             border-bottom: 1px solid #1a1a1a;
             padding-bottom: 8px;
             margin-bottom: 15px;
@@ -47,66 +49,66 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 6px;
-            color: #444;
+            color: #555;
             letter-spacing: 1px;
         }
-        .track-active { color: #ffffff; }
+        .track-active { color: #ffffff; text-shadow: 0 0 5px rgba(255,255,255,0.3); }
 
-        /* --- ASCII UNIT STYLING --- */
+        /* --- ASCII UNIT (NEON PINK) --- */
         .ascii-container {
-            width: 100%; 
-            max-width: 700px; 
-            display: flex; 
-            justify-content: center; 
+            width: fit-content;
+            border: 1px solid #ff00ff;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.15);
+            padding: 30px;
             margin: 40px 0;
+            background: #080808;
+            border-radius: 8px;
         }
         pre {
             font-family: 'Courier New', monospace; 
             font-size: 1.1rem; 
             color: #ffffff; 
             line-height: 1.2; 
-            pointer-events: none; 
-            text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+            margin: 0;
+            text-shadow: 0 0 8px rgba(255, 0, 255, 0.4);
         }
 
-        /* --- GALLERY ITEMS --- */
-        .gallery-item { max-width: 700px; border-bottom: 1px solid #1a1a1a; padding: 60px 0; width: 100%; }
-        
-        .haiku { 
-            font-family: 'Georgia', serif; 
-            font-style: italic; 
-            font-size: 1.3rem; 
-            color: #ffffff; 
-            text-align: center; 
-            margin: 30px 0; 
-            letter-spacing: 1px; 
-            line-height: 1.8; 
-        }
-        .metadata { font-size: 0.7rem; color: #00ffcc; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 2px; }
-        .archivist-note { font-size: 0.85rem; color: #666; border-left: 1px solid #333; padding-left: 15px; margin-top: 20px; font-style: normal; }
-
-        /* --- CD COVER PULSE (LOG #002) --- */
+        /* --- LOG #002 SIGNAL BOX (NEON PURPLE) --- */
         .cd-cover {
-            width: 100%; max-width: 400px; aspect-ratio: 1 / 1;
+            width: 100%; max-width: 300px; aspect-ratio: 1 / 1;
             margin: 0 auto 30px auto; background: #000;
-            border: 1px solid #222; display: flex; align-items: center;
+            border: 1px solid #bf00ff;
+            box-shadow: 0 0 20px rgba(191, 0, 255, 0.2);
+            display: flex; align-items: center;
             justify-content: center; position: relative; overflow: hidden;
+            border-radius: 4px;
         }
         .signal-portal-mini {
             width: 80px; height: 80px; 
-            background: radial-gradient(circle, #00e5ff 0%, #000 70%);
+            background: radial-gradient(circle, #bf00ff 0%, #000 75%);
             border-radius: 50%;
             animation: pulse-core 4s infinite ease-in-out;
         }
         @keyframes pulse-core {
-            0%, 100% { transform: scale(0.8); opacity: 0.3; box-shadow: 0 0 20px #00e5ff; }
-            50% { transform: scale(1.1); opacity: 0.8; box-shadow: 0 0 50px #00e5ff; }
+            0%, 100% { transform: scale(0.8); opacity: 0.3; box-shadow: 0 0 20px #bf00ff; }
+            50% { transform: scale(1.1); opacity: 0.7; box-shadow: 0 0 40px #bf00ff; }
         }
-        .cd-label { font-size: 0.6rem; color: #00ffcc; position: absolute; bottom: 10px; right: 10px; letter-spacing: 2px; }
+        .cd-label { font-size: 0.6rem; color: #bf00ff; position: absolute; bottom: 10px; right: 10px; letter-spacing: 2px; }
 
-        footer { margin-top: 80px; font-size: 0.65rem; color: #333; text-align: center; border-top: 1px solid #111; padding-top: 40px; width: 100%; max-width: 700px; }
-        a { color: #555; text-decoration: none; transition: 0.3s; }
-        a:hover { color: #00ffcc; }
+        /* --- GALLERY ITEMS --- */
+        .gallery-item { max-width: 700px; border-bottom: 1px solid #1a1a1a; padding: 60px 0; width: 100%; }
+        .haiku { 
+            font-family: 'Georgia', serif; 
+            font-style: italic; font-size: 1.3rem; 
+            color: #f0f0f0; text-align: center; 
+            margin: 30px 0; letter-spacing: 1px; line-height: 1.8; 
+        }
+        .metadata { font-size: 0.7rem; color: #00e5ff; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 2px; }
+        .archivist-note { font-size: 0.85rem; color: #666; border-left: 2px solid #00e5ff; padding-left: 15px; margin-top: 20px; }
+
+        footer { margin-top: 80px; font-size: 0.65rem; color: #444; text-align: center; border-top: 1px solid #111; padding-top: 40px; width: 100%; max-width: 700px; }
+        a { color: #888; text-decoration: none; transition: 0.3s; }
+        a:hover { color: #00e5ff; text-shadow: 0 0 5px #00e5ff; }
     </style>
 </head>
 <body>
@@ -133,6 +135,7 @@
            /   \
           /|   |\
          / |   | \ 🎤   ✧
+
            |   |   |        ♬
            |___|   |             🌟
            |   |   |
@@ -143,10 +146,8 @@
   [ ⚡  📡  MooreSignal  📡  ⚡ ]
   ««««««««««««««»»»»»»»»»»»»»»»»»»
 </pre>
-
 </div>
 
-<!-- LOG #001 -->
 <div class="gallery-item" id="log-001">
     <div class="metadata">LOG #001 // SMOOTH BEATS</div>
     <div class="haiku">
@@ -155,24 +156,23 @@
         Melting in smooth beats
     </div>
     <div class="archivist-note">
-        <strong>Archivist’s Log:</strong> Style ~ Pop | Frequency: High-Sync | Ref: 2026.02.08
+        <strong>Archivist’s Log:</strong> Style ~ Pop | Frequency: High-Sync | Ref: 2026.02.18
     </div>
 </div>
 
-<!-- LOG #002 (PENDING) -->
 <div class="gallery-item" id="log-002">
     <div class="metadata">LOG ENCRYPTED // PENDING TRANSMISSION</div>
     <div class="cd-cover">
         <div class="signal-portal-mini"></div>
         <div class="cd-label">MOORE_SIGNAL // VOL. 01</div>
     </div>
-    <div class="haiku" style="color: #444;">
+    <div class="haiku" style="color: #333;">
         The rhythm's adrift.<br>
         Pulsing through tomorrow's heart.<br>
         — Manifesting soon —
     </div>
     <div class="archivist-note">
-        <strong>Status:</strong> Analyzing frequencies of the signal — Stay tuned!
+        <strong>Status:</strong> Analyzing frequencies of the signal. Stay tuned.
     </div>
 </div>
 
