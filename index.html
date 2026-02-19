@@ -192,10 +192,19 @@
         Blending the soul with rhythm—<br>
         Melting in smooth beats
     </div>
+    
+    <!-- THE MINI TERMINAL BUTTON -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="toggleSignal(this, 'audio-log-001', 'audio/smooth.mp3')" class="play-btn">
+            [ ▶ INITIALIZE LOG #001 ]
+        </button>
+    </div>
+
     <div class="archivist-note">
         <strong>Archivist’s Log:</strong> Style ~ Pop | Frequency: High-Sync | Ref: 2026.02.18
     </div>
 </div>
+
 
 <div class="gallery-item" id="log-002">
     <div class="metadata">LOG ENCRYPTED // PENDING TRANSMISSION</div>
@@ -214,49 +223,54 @@
 </div>
 
 <footer>
-    <p>Visuals rendered via Idol Party 2. <br> Styling & Performance by The Archivist.</p>
-    <p><a href="https://github.com">← Return to Terminal</a></p>
+    <p>Styling & Performance by The Archivist.</p>
+    <p><a href="https://github.com/Cyber-Chic/poetry-through-play">← Return to Terminal</a></p>
 </footer>
 
 <script>
-    let audioContext;
-    let audioBuffer;
-    let sourceNode;
-    let isPlaying = false;
-    const btn = document.getElementById('audio-btn');
+    let audioCtx, sources = {}, buffers = {};
 
-    // INITIALIZE THE SIGNAL FREQUENCY
-    async function initAudio() {
-        if (!audioContext) {
-            audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            const response = await fetch('audio/smooth.mp3'); // Ensure this path is correct
-            const arrayBuffer = await response.arrayBuffer();
-            audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
-        }
-    }
+    async function toggleSignal(btn, id, filePath) {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
-    async function toggleAudio() {
-        if (!isPlaying) {
-            await initAudio();
-            sourceNode = audioContext.createBufferSource();
-            sourceNode.buffer = audioBuffer;
-            sourceNode.loop = true; // THE INSTANT HANDSHAKE
-            sourceNode.connect(audioContext.destination);
-            sourceNode.start(0);
-            
-            btn.textContent = "[ ⏸ STABILIZE ]";
-            btn.classList.add('playing');
-            isPlaying = true;
-        } else {
-            sourceNode.stop();
-            btn.textContent = "[ ▶ INITIALIZE ]";
+        // IF THE SIGNAL IS ACTIVE, STOP IT
+        if (sources[id]) {
+            sources[id].stop();
+            delete sources[id];
+            btn.textContent = "[ ▶ INITIALIZE LOG ]";
             btn.classList.remove('playing');
-            isPlaying = false;
+            return;
         }
+
+        // STOP ALL OTHER SIGNALS (SILENCE PROTOCOL)
+        Object.keys(sources).forEach(key => {
+            sources[key].stop();
+            delete sources[key];
+        });
+        document.querySelectorAll('.play-btn').forEach(b => {
+            b.textContent = "[ ▶ INITIALIZE LOG ]";
+            b.classList.remove('playing');
+        });
+
+        // LOAD AND DECODE THE FREQUENCY
+        if (!buffers[id]) {
+            const res = await fetch(filePath);
+            const ab = await res.arrayBuffer();
+            buffers[id] = await audioCtx.decodeAudioData(ab);
+        }
+
+        // START THE INSTANT LOOP
+        const source = audioCtx.createBufferSource();
+        source.buffer = buffers[id];
+        source.loop = true;
+        source.connect(audioCtx.destination);
+        source.start(0);
+        
+        sources[id] = source;
+        btn.textContent = "[ ⏸ STABILIZE SIGNAL ]";
+        btn.classList.add('playing');
     }
 </script>
-
-
 
 </body>
 </html>
