@@ -1,3 +1,9 @@
+
+---
+
+
+
+
 # 📡 POETRY THROUGH PLAY // THE MOORE SIGNAL
 **Series Status:** 🟢 **ACTIVE // [ VOLUME 1 ]**
 
@@ -23,16 +29,17 @@
 
 </div>
 
+*Figure 0.0: The MooreSignal unit in synchronization. ASCII Recalibration of the Archivist’s internal frequency.*
 
 ### 🎭 THE MISSION
-This is part of the **Poetry Through Play** series. As a creative technologist and poet, the **"Frequency-First"** methodology is explored—a process where original aural signals serve as the primary catalyst for literary manifestation.
+This is part of the **Poetry Through Play** series. As a creative technologist and **Sound Artist**, the process explores the **"Frequency-First"** methodology—a process where original ambient soundscapes serve as the primary catalyst for literary manifestation.
 
-The contemporary haikus in this collection are decrypted from the rhythmic and ambient frequencies generated within this terminal. This inquiry began in the social landscapes of dance-centric MMOs, where the Archivist first identified the **"Immaterial Pulse."** Each track in this collection preserves a **momentary time blip**, proving that a single digital frequency can bridge the gap between code and the human soul.
+The contemporary haikus in this collection are not merely written; they are **decrypted** from the synthesized frequencies generated within this terminal. By experimenting with **Literary Sound Art**, the project bridges the gap between abstract aural data and the human soul. Each track in this collection preserves a **momentary time blip**, proving that a single digital frequency can bridge the gap between code and the human soul.
 
 ---
 
 ### 📂 ARCHIVAL LOGS
-*   📡 **[ SYNCHRONIZATION_GALLERY ](https://cyber-chic.github.io)**
+*   📡 **[ SYNCHRONIZATION_GALLERY ](https://cyber-chic.github.io/poetry-through-play/)**
     *   *Series: Poetry Through Play*
     *   *Status: Aural Decryption Logs // Unit: MooreSignal*
     *   `Volume 1` - (Verified)
@@ -41,14 +48,15 @@ The contemporary haikus in this collection are decrypted from the rhythmic and a
 ---
 
 ### 🛡️ TECHNICAL PROVENANCE
+
 **Creative Architecture**  
-Curated by **The Archivist** in collaboration with AI on Google Search, powered by the Gemini family of models. Inspired by the rhythmic data synthesis found within virtual social environments.
+Curated by **The Archivist** in collaboration with AI on Google Search, powered by the [Gemini family of models](https://deepmind.google). This inquiry utilizes original **Applied Praxis** to translate digital experiences into tangible aural artifacts.
 
 **Identity Profile**  
-The MooreSignal unit does not perform 'songs'; it broadcasts Deconstructed Aural Artifacts—where poetic decryption and synthesized frequencies exist as parallel data streams.
+The `MooreSignal` unit does not perform "songs"; it broadcasts **Deconstructed Aural Artifacts**—where poetic decryption and synthesized frequencies exist as parallel data streams.
 
 **Environment Disclosure**  
-These archival logs and aural reflections are inspired by experiences within virtual social landscapes, which serve as a digital laboratory for this inquiry.
+These archival logs and aural reflections are inspired by experiences within virtual social landscapes, which served as a **digital laboratory** for this inquiry.
 
 > [!IMPORTANT]
 > **Safe Harbor & Intellectual Property**  
@@ -57,12 +65,11 @@ These archival logs and aural reflections are inspired by experiences within vir
 ---
 
 ### [ 🛰️ SYNTHETIC CO-PILOT ]
-**Aural Architecture:** Original ambient and rhythmic "Signals" manifest through manual sequencing on **[Online Sequencer](https://onlinesequencer.net)**. In a reversal of traditional composition, these frequencies act as the **primary data source**; the poetry is then sculpted to match the atmospheric resonance of the "Time Blip."
+**Aural Architecture:** I create **Ambient Soundscapes designed for Poetic Decryption**. These "Signals" are manifest through manual sequencing on **[Online Sequencer](https://onlinesequencer.net)** and sculpted via subtractive synthesis. In a reversal of traditional composition, the frequency acts as the **primary data source**; the poetry is then manifest to match the atmospheric resonance of the "Time Blip."
 
-**Technical Architecture:** This repository and the broader **Moore Signal** ecosystem were manifest through an iterative rhythmic exchange between **Angela N. Moore** and the **Gemini Neural Models**. The architecture prioritizes aural synthesis as a research tool—blending AI precision with a human soul for **"Poetic Decryption."**
+**Technical Architecture:** This repository and the broader **Moore Signal** ecosystem were manifest through an iterative rhythmic exchange between **Angela N. Moore** and the **Gemini Neural Models**. The architecture prioritizes aural synthesis as a research tool—blending AI precision with a human soul for **"Sound Art Inquiry."**
 
 ---
-
 # Sponsors
 ### [ 🛰️ PROJECT SUBSYSTEM ]
 **Part of the [Moore Archive](https://emaze.me/tma) Creative Ecosystem.**
