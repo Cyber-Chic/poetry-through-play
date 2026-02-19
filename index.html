@@ -219,20 +219,31 @@
 </footer>
 
 <script>
-function toggleAudio() {
     const audio = document.getElementById('haiku-audio');
     const btn = document.getElementById('audio-btn');
-    if (audio.paused) {
-        audio.play();
-        btn.textContent = "[ ⏸ STABILIZE ]";
-        btn.classList.add('playing');
-    } else {
-        audio.pause();
-        btn.textContent = "[ ▶ INITIALIZE ]";
-        btn.classList.remove('playing');
+
+    // SEAMLESS LOOP HANDSHAKE
+    audio.addEventListener('timeupdate', function() {
+        var buffer = 0.40; // Calibrate this number (0.1 to 0.5) to fix the gap
+        if (this.currentTime > this.duration - buffer) {
+            this.currentTime = 0;
+            this.play();
+        }
+    }, false);
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            btn.textContent = "[ ⏸ STABILIZE ]";
+            btn.classList.add('playing');
+        } else {
+            audio.pause();
+            btn.textContent = "[ ▶ INITIALIZE ]";
+            btn.classList.remove('playing');
+        }
     }
-}
 </script>
+
 
 </body>
 </html>
