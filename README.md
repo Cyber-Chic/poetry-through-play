@@ -45,7 +45,7 @@ The contemporary haikus in this collection are decrypted from the rhythmic and a
 Curated by **The Archivist** in collaboration with AI on Google Search, powered by the Gemini family of models. Inspired by the rhythmic data synthesis found within virtual social environments.
 
 **Identity Profile**  
-The `MooreSignal` unit is an original digital manifestation of the Archivist’s personal identity. The character styling is a custom **ASCII recalibration** designed to serve as a spokesperson for internal monologue and poetic decryption.
+The MooreSignal unit does not perform 'songs'; it broadcasts Deconstructed Aural Artifacts—where poetic decryption and synthesized frequencies exist as parallel data streams.
 
 **Environment Disclosure**  
 These archival logs and aural reflections are inspired by experiences within virtual social landscapes, which serve as a digital laboratory for this inquiry.
