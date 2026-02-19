@@ -48,18 +48,46 @@
         .track-entry {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 6px;
+            align-items: center;
+            margin-bottom: 10px;
             color: #555;
             letter-spacing: 1px;
         }
         .track-active { color: #ffffff; text-shadow: 0 0 5px rgba(255,255,255,0.3); }
 
-        /* --- ASCII UNIT (NEON PINK) --- */
+        /* --- NEON PLAY BUTTON --- */
+        .play-btn {
+            background: transparent;
+            border: 1px solid #00e5ff;
+            color: #00e5ff;
+            font-family: 'Courier New', monospace;
+            font-size: 0.65rem;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+            box-shadow: 0 0 5px rgba(0, 229, 255, 0.2);
+        }
+        .play-btn:hover {
+            background: #00e5ff;
+            color: #000;
+            box-shadow: 0 0 15px #00e5ff;
+        }
+        .playing {
+            animation: pulse-button 1.5s infinite alternate;
+            background: rgba(0, 229, 255, 0.1);
+        }
+        @keyframes pulse-button {
+            from { box-shadow: 0 0 5px #00e5ff; }
+            to { box-shadow: 0 0 20px #00e5ff; }
+        }
+
+        /* --- ASCII UNIT (RECALIBRATED) --- */
         .ascii-container {
             width: fit-content;
             border: 1px solid #ff00ff;
             box-shadow: 0 0 15px rgba(255, 0, 255, 0.15);
-            padding: 30px;
+            padding: 25px;
             margin: 40px 0;
             background: #080808;
             border-radius: 8px;
@@ -68,9 +96,10 @@
             font-family: 'Courier New', monospace; 
             font-size: 1.1rem; 
             color: #ffffff; 
-            line-height: 1.2; 
+            line-height: 1.1; /* Tighter line height to close the gap */
             margin: 0;
             text-shadow: 0 0 8px rgba(255, 0, 255, 0.4);
+            white-space: pre;
         }
 
         /* --- LOG #002 SIGNAL BOX (NEON PURPLE) --- */
@@ -121,10 +150,19 @@
 
 <div class="setlist-container">
     <div class="setlist-title">📡 CURRENT SETLIST</div>
-    <div class="track-entry track-active"><span>01. SMOOTH BEATS</span><span>[ SYNCHRONIZED ]</span></div>
+    
+    <div class="track-entry track-active">
+        <span>01. SMOOTH BEATS</span>
+        <button onclick="toggleAudio()" class="play-btn" id="audio-btn">[ ▶ INITIALIZE ]</button>
+    </div>
+    
     <div class="track-entry"><span>02. [ DATA_ENCRYPTED ]</span><span>[ PENDING... ]</span></div>
     <div class="track-entry" style="opacity: 0.2;"><span>03. SILENCE_REFLECTIVE</span><span>[ STANDBY ]</span></div>
 </div>
+
+<audio id="haiku-audio" loop>
+    <source src="audio/haiku-01.mp3" type="audio/mpeg">
+</audio>
 
 <div class="ascii-container">
 <pre>
@@ -135,7 +173,6 @@
            /   \
           /|   |\
          / |   | \ 🎤   ✧
-
            |   |   |        ♬
            |___|   |             🌟
            |   |   |
@@ -180,18 +217,6 @@
     <p>Visuals rendered via Idol Party 2. <br> Styling & Performance by The Archivist.</p>
     <p><a href="https://github.com">← Return to Terminal</a></p>
 </footer>
-<!-- HAIKU FREQUENCY TERMINAL -->
-<div class="standout-box" style="text-align: center;">
-    <p>📡 <strong>SIGNAL: [HAIKU_NAME]</strong></p>
-    
-    <audio id="haiku-audio" loop>
-        <source src="audio/haiku-01.mp3" type="audio/mpeg">
-    </audio>
-
-    <button onclick="toggleAudio()" class="archivist-stamp" id="audio-btn">
-        [ ▶️ INITIALIZE FREQUENCY ]
-    </button>
-</div>
 
 <script>
 function toggleAudio() {
@@ -199,10 +224,12 @@ function toggleAudio() {
     const btn = document.getElementById('audio-btn');
     if (audio.paused) {
         audio.play();
-        btn.textContent = "[ ⏸️ STABILIZE SIGNAL ]";
+        btn.textContent = "[ ⏸ STABILIZE ]";
+        btn.classList.add('playing');
     } else {
         audio.pause();
-        btn.textContent = "[ ▶️ INITIALIZE FREQUENCY ]";
+        btn.textContent = "[ ▶ INITIALIZE ]";
+        btn.classList.remove('playing');
     }
 }
 </script>
