@@ -153,16 +153,16 @@
     
     <div class="track-entry track-active">
         <span>01. SMOOTHLY MELTING BEAT</span>
-        <button onclick="toggleAudio()" class="play-btn" id="audio-btn">[ ▶ INITIALIZE ]</button>
+        <!-- UPDATED: Now calls toggleSignal instead of toggleAudio -->
+        <button onclick="toggleSignal(this, 'log001', 'audio/smooth.mp3')" class="play-btn">
+            [ ▶ INITIALIZE ]
+        </button>
     </div>
     
     <div class="track-entry"><span>02. [ DATA_ENCRYPTED ]</span><span>[ PENDING... ]</span></div>
     <div class="track-entry" style="opacity: 0.2;"><span>03. SILENCE_REFLECTIVE</span><span>[ STANDBY ]</span></div>
 </div>
 
-<audio id="haiku-audio" loop>
-    <source src="audio/smooth.mp3" type="audio/mpeg">
-</audio>
 
 <div class="ascii-container">
 <pre>
