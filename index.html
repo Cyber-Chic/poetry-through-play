@@ -219,30 +219,43 @@
 </footer>
 
 <script>
-    const audio = document.getElementById('haiku-audio');
+    let audioContext;
+    let audioBuffer;
+    let sourceNode;
+    let isPlaying = false;
     const btn = document.getElementById('audio-btn');
 
-    // SEAMLESS LOOP HANDSHAKE
-    audio.addEventListener('timeupdate', function() {
-        var buffer = 0.40; // Calibrate this number (0.1 to 0.5) to fix the gap
-        if (this.currentTime > this.duration - buffer) {
-            this.currentTime = 0;
-            this.play();
+    // INITIALIZE THE SIGNAL FREQUENCY
+    async function initAudio() {
+        if (!audioContext) {
+            audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const response = await fetch('audio/smooth.mp3'); // Ensure this path is correct
+            const arrayBuffer = await response.arrayBuffer();
+            audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
         }
-    }, false);
+    }
 
-    function toggleAudio() {
-        if (audio.paused) {
-            audio.play();
+    async function toggleAudio() {
+        if (!isPlaying) {
+            await initAudio();
+            sourceNode = audioContext.createBufferSource();
+            sourceNode.buffer = audioBuffer;
+            sourceNode.loop = true; // THE INSTANT HANDSHAKE
+            sourceNode.connect(audioContext.destination);
+            sourceNode.start(0);
+            
             btn.textContent = "[ ⏸ STABILIZE ]";
             btn.classList.add('playing');
+            isPlaying = true;
         } else {
-            audio.pause();
+            sourceNode.stop();
             btn.textContent = "[ ▶ INITIALIZE ]";
             btn.classList.remove('playing');
+            isPlaying = false;
         }
     }
 </script>
+
 
 
 </body>
