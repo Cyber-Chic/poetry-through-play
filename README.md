@@ -53,19 +53,19 @@ The contemporary haikus in this collection are not merely written; they are **de
 Curated by **The Archivist** in collaboration with AI on Google Search, powered by the [Gemini family of models](https://deepmind.google). This inquiry utilizes original **Applied Praxis** to translate digital experiences into tangible aural artifacts.
 
 **Identity Profile**  
-The `MooreSignal` unit does not perform "songs"; it broadcasts **Deconstructed Aural Artifacts**—where poetic decryption and synthesized frequencies exist as parallel data streams.
+The `MooreSignal` unit does not perform standard "songs"; it broadcasts **Deconstructed Aural Artifacts**—where poetic decryption and synthesized frequencies exist as parallel data streams.
 
 **Environment Disclosure**  
 These archival logs and aural reflections are inspired by experiences within virtual social landscapes, which served as a **digital laboratory** for this inquiry.
 
 > [!IMPORTANT]
 > **Safe Harbor & Intellectual Property**  
-> This project is a non-commercial, independent literary and artistic work. All poetic works, ASCII recalibrations, and archival logs are the original intellectual property of **The Archivist**. References to external virtual environments are for contextual and narrative purposes only. This project does not use, distribute, or claim ownership of any game assets, software code, or proprietary trademarks belonging to third-party developers.
+> This project is a non-commercial, independent literary and artistic work. All poetic works, ASCII recalibrations, and archival log performances are the original intellectual property of **The Archivist**. References to external virtual environments are for contextual and narrative purposes only. This project does not use, distribute, or claim ownership of any game assets, software code, or proprietary trademarks belonging to third-party developers.
 
 ---
 
 ### [ 🛰️ SYNTHETIC CO-PILOT ]
-**Aural Architecture:** I create **Ambient Soundscapes designed for Poetic Decryption**. These "Signals" are manifest through manual sequencing on **[Online Sequencer](https://onlinesequencer.net)** and sculpted via subtractive synthesis. In a reversal of traditional composition, the frequency acts as the **primary data source**; the poetry is then manifest to match the atmospheric resonance of the "Time Blip."
+**Aural Architecture:** I create **Ambient Soundscapes designed for Poetic Decryption**. These rhythmic "Signals" are manifest through manual sequencing on **[Online Sequencer](https://onlinesequencer.net)** and sculpted via subtractive synthesis. In a reversal of traditional composition, the frequency acts as the **primary data source**; the poetry is then manifest to match the atmospheric resonance of the "Time Blip."
 
 **Technical Architecture:** This repository and the broader **Moore Signal** ecosystem were manifest through an iterative rhythmic exchange between **Angela N. Moore** and the **Gemini Neural Models**. The architecture prioritizes aural synthesis as a research tool—blending AI precision with a human soul for **"Sound Art Inquiry."**
 
