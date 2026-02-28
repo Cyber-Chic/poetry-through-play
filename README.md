@@ -47,6 +47,31 @@ The contemporary haikus in this collection are not merely written; they are **de
 
 ---
 
+### 📂 [ LITERARY ARCHIVE ]
+*   **Published Poet:** [*The Literary Yard*](https://literaryyard.com/2021/04/09/poems-broken-podiums-and-rainy-eyes-and-sunny-colored-pencils/), [*The Drabble*](https://thedrabble.wordpress.com/2021/07/24/jaded-jaspers-and-one-other-poem/), and [*Rue Scribe*](https://underwoodpress.com/ruescribe/2021/11/11/a-lens-of-hope-for-my-younger-self-by-angela-moore/).
+*   **Author:** **A Powerful Giant** and the **Truth, 30% Off** social-development comic series.
+*   **[ 📑 VIEW POETRY PORTFOLIO ](https://angies.poetry.blog/)**
+
+---
+
+### 📡 [ BROADCAST OF LITERARY SIGNALS ]
+> "I’m focused on building a global readership, starting with **curated releases** in California, Canada and Connecticut."
+
+**Micro-Library & Gallery Placements:**
+*   **California** | *Location Pending*
+*   **Canada** | *Location Pending*
+*   **Connecticut** | *Location Pending*
+
+---
+
+### 🏛️ [ SYSTEM AUTHORITY ]
+**Professional Identity:** Collection Management Assistant // [Rare Book & Manuscript Library](https://www.youtube.com/watch?v=3yS19NcRQt8&ab_channel=TBrandStudio)   
+**Independent Specializations:** [Provenance Research](https://cyber-chic.github.io/themoorearchive/) & [Atmospheric Sound Art](https://cyber-chic.github.io/poetry-through-play/)
+
+> **Verification:** Featured in the [New York Times / T Brand Studio](https://www.nytimes.com/paidpost/tiaa/on-the-right-track-retirement-ready.html#angela-moore) inquiry on archival preservation and personal legacy.
+
+---
+
 ### 🛡️ TECHNICAL PROVENANCE
 
 **Creative Architecture**  
