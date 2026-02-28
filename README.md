@@ -111,5 +111,3 @@ Sponsorships support the full creative ecosystem—from public-facing research a
 
 ---
 **ANGELA N. MOORE // SIGNAL STATUS: 🟢 NOMINAL**
-
-[ ← Return to Central Terminal ](https://github.com)
