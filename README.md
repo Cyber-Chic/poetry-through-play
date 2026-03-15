@@ -55,12 +55,10 @@ The contemporary haikus in this collection are not merely written; they are **de
 ---
 
 ### 📡 [ BROADCAST OF LITERARY SIGNALS ]
-> "I’m focused on building a global readership, starting with **curated releases** in California, Canada and Connecticut."
+> "I’m focused on fostering community readership, starting with **curated releases** across the nation."
 
 **Micro-Library & Gallery Placements:**
-*   **California** | *Location Pending*
-*   **Canada** | *Location Pending*
-*   **Connecticut** | *Location Pending*
+*   **National** | *Multi Location*
 
 ---
 
