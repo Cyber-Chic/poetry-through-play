@@ -93,19 +93,27 @@ These archival logs and aural reflections are inspired by experiences within vir
 **Technical Architecture:** This repository and the broader **Moore Signal** ecosystem were manifest through an iterative rhythmic exchange between **Angela N. Moore** and the **Gemini Neural Models**. The architecture prioritizes aural synthesis as a research tool—blending AI precision with a human soul for **"Sound Art Inquiry."**
 
 ---
-# Sponsors
-### [ 🛰️ PROJECT SUBSYSTEM ]
-**Part of the [Moore Archive](https://emaze.me/tma) Creative Ecosystem.**
+### [ 🛰️ ARCHIVE_HUB ]
+**The Moore Archive Creative Ecosystem.**  
 *Bridging the gap between digital code and physical reality.*
 
-**EXPLORE THE NETWORK:**
-*   **🔭 RESEARCH:** [NASA Exoplanet Watch Data](https://github.com/Cyber-Chic/nasa)
-*   **🧪 ARCHIVE:** [The Moore Archive | Physical Artifact Hunt](https://emaze.me/tma)
-*   **📡 TERMINAL:** [Cyber-Chic Home & Protocols](https://github.com/Cyber-Chic)
+This hub serves as the central directory for the independent research and creative inquiries hosted across the Creative Technologist’s collective GitHub repositories.  
 
-**[ ☕ MISSION SUSTENANCE ]**
-Sponsorships support the full creative ecosystem—from public-facing research and citizen science to the physical art drops of The Moore Archive.
-[**➡️ SUPPORT THE JOURNEY VIA PAYPAL**](https://www.paypal.com/donate/?hosted_button_id=CJVWS45KF46ZE)
+**Inquiries are accepted for the following specialized engagements:**
+*   **Guest Speaking:** "The NASA Citizen Scientist: A Creative Volunteer’s Experience."
+*   **Literary Talks:** "The Art of the Dispatch: Contemporary Haikus as Visual Artifacts."
+*   **Creative Process:** "Aural Decryption: Transforming Soundscapes into Micro-Poetry."
+*   **Literary Advocacy:** "The Quiet Signal: Fostering Community Literacy through Independent Artifact Drops."
+
+**➡️ CONTACT:** [themoorearchive@proton.me](mailto:themoorearchive@proton.me)
 
 ---
-**ANGELA N. MOORE // SIGNAL STATUS: 🟢 NOMINAL**
+**EXPLORE:** [📡 FULL GITHUB TERMINAL (Collective Repositories)](https://github.com/Cyber-Chic)
+
+<!-- THE MOORE ARCHIVE LLC // SIGNAL STATUS: 🟢 NOMINAL -->
+<!-- DISCLAIMER: This is a proprietary research inquiry managed by The Moore Archive LLC. Content is for educational and artistic purposes only. -->
+
+**ANGELA N. MOORE // SIGNAL STATUS: 🟢 NOMINAL**  
+**DISCLAIMER:** *This is an independent creative inquiry. Content is for educational and artistic purposes only.*
+
+> *“I want to live as though I traveled back in time... To this very moment. And take in all the beauty I couldn’t see the first time 
