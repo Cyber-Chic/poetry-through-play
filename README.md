@@ -31,66 +31,42 @@
 
 *Figure 0.0: The MooreSignal unit in synchronization. ASCII Recalibration of the Archivist’s internal frequency.*
 
-### 🎭 THE MISSION
-This is part of the **Poetry Through Play** series. As a creative technologist and **Sound Artist**, the process explores the **"Frequency-First"** methodology—a process where original ambient soundscapes serve as the primary catalyst for literary manifestation.
+# 🎹 Poetry Through Play // THE MOORE SIGNAL
+**STATUS: AURAL DECRYPTION LOGS // UNIT: MOORESIGNAL**
 
-The contemporary haikus in this collection are not merely written; they are **decrypted** from the synthesized frequencies generated within this terminal. By experimenting with **Literary Sound Art**, the project bridges the gap between abstract aural data and the human soul. Each track in this collection preserves a **momentary time blip**, proving that a single digital frequency can bridge the gap between code and the human soul.
+<br>
 
----
-
-### 📂 ARCHIVAL LOGS
-*   📡 **[ SYNCHRONIZATION_GALLERY ](https://cyber-chic.github.io/poetry-through-play/)**
-    *   *Series: Poetry Through Play*
-    *   *Status: Aural Decryption Logs // Unit: MooreSignal*
-    *   `Volume 1` - (Verified)
-    *   `Volume 2` - [Encrypted]
+**Poetry Through Play** is a research series exploring the **"Frequency-First"** methodology. In this inquiry, original ambient soundscapes act as the primary catalyst for literary manifestation.
 
 ---
 
-### 📂 [ LITERARY ARCHIVE ]
-*   **Published Poet:** [*The Literary Yard*](https://literaryyard.com/2021/04/09/poems-broken-podiums-and-rainy-eyes-and-sunny-colored-pencils/), [*The Drabble*](https://thedrabble.wordpress.com/2021/07/24/jaded-jaspers-and-one-other-poem/), and [*Rue Scribe*](https://underwoodpress.com/ruescribe/2021/11/11/a-lens-of-hope-for-my-younger-self-by-angela-moore/).
-*   **Author:** **A Powerful Giant** and the **Truth, 30% Off** social-development comic series.
-*   **[ 📑 VIEW POETRY PORTFOLIO ](https://angies.poetry.blog/)**
+### 🛰️ THE INQUIRY: AURAL DECRYPTION
+The contemporary haikus in this collection are **decrypted** from synthesized frequencies. The project bridges the gap between abstract aural data and the human soul—capturing "Time Blips" through **Literary Sound Art.**
+
+*   📡 **[ SYNCHRONIZATION_GALLERY ](https://cyber-chic.github.io/poetry-through-play/)** — *View Volume 1 Logs*
+*   📑 **[ LITERARY ARCHIVE ](https://angies.poetry.blog/)** — *Traditional Portfolio*
 
 ---
 
-### 📡 [ BROADCAST OF LITERARY SIGNALS ]
-> "I’m focused on fostering community readership, starting with **curated releases** across the nation."
+### 🏛️ SYSTEM AUTHORITY & PROVENANCE
+**PRINCIPAL INVESTIGATOR:** A N MOORE  
+**SPECIALIZATIONS:** [Provenance Research](https://cyber-chic.github.io/themoorearchive/releases) // [Aural Synthesis](https://cyber-chic.github.io/poetry-through-play/)
 
-**Micro-Library & Gallery Placements:**
-*   **National** | *Multi Location*
-
----
-
-### 🏛️ [ SYSTEM AUTHORITY ]
-**Professional Identity:** Collection Management Assistant // [Rare Book & Manuscript Library](https://www.youtube.com/watch?v=3yS19NcRQt8&ab_channel=TBrandStudio)   
-**Independent Specializations:** [Provenance Research](https://cyber-chic.github.io/themoorearchive/) & [Atmospheric Sound Art](https://cyber-chic.github.io/poetry-through-play/)
-
-> **Verification:** Featured in the [New York Times / T Brand Studio](https://www.nytimes.com/paidpost/tiaa/on-the-right-track-retirement-ready.html#angela-moore) inquiry on archival preservation and personal legacy.
+*   **Applied Praxis:** Rhythmic "Signals" are manifest through manual sequencing on **[Online Sequencer](https://onlinesequencer.net)**. The process utilizes **Atmospheric Observation**—where synthesized frequencies are either harvested from virtual experiences or manifest through direct, autonomous inquiry.
+*   **Virtual Laboratory:** These logs are inspired by reflections within virtual social landscapes, utilized here as a digital laboratory for observational inquiry.
+*   **Literary Credits:** Published in *The Literary Yard*, *The Drabble*, and *Rue Scribe*. Author of *A Powerful Giant*.
 
 ---
 
-### 🛡️ TECHNICAL PROVENANCE
 
-**Creative Architecture**  
-Curated by **The Archivist** in collaboration with AI on Google Search, powered by the [Gemini family of models](https://deepmind.google). This inquiry utilizes original **Applied Praxis** to translate digital experiences into tangible aural artifacts.
-
-**Identity Profile**  
-The `MooreSignal` unit does not perform standard "songs"; it broadcasts **Deconstructed Aural Artifacts**—where poetic decryption and synthesized frequencies exist as parallel data streams.
-
-**Environment Disclosure**  
-These archival logs and aural reflections are inspired by experiences within virtual social landscapes, which served as a **digital laboratory** for this inquiry.
-
-> [!IMPORTANT]
-> **Safe Harbor & Intellectual Property**  
-> This project is a non-commercial, independent literary and artistic work. All poetic works, ASCII recalibrations, and archival log performances are the original intellectual property of **The Archivist**. References to external virtual environments are for contextual and narrative purposes only. This project does not use, distribute, or claim ownership of any game assets, software code, or proprietary trademarks belonging to third-party developers.
+### 🛡️ SAFE HARBOR PROTOCOL
+This is a non-commercial, independent literary work. All poetic works and aural reflections are the original intellectual property of **The Moore Signal Archive**. This project does not use, claim ownership of, or distribute third-party game assets or software code.
 
 ---
 
-### [ 🛰️ SYNTHETIC CO-PILOT ]
-**Aural Architecture:** I create **Ambient Soundscapes designed for Poetic Decryption**. These rhythmic "Signals" are manifest through manual sequencing on **[Online Sequencer](https://onlinesequencer.net)** and sculpted via subtractive synthesis. In a reversal of traditional composition, the frequency acts as the **primary data source**; the poetry is then manifest to match the atmospheric resonance of the "Time Blip."
-
-**Technical Architecture:** This repository and the broader **Moore Signal** ecosystem were manifest through an iterative rhythmic exchange between **Angela N. Moore** and the **Gemini Neural Models**. The architecture prioritizes aural synthesis as a research tool—blending AI precision with a human soul for **"Sound Art Inquiry."**
+### 🤖 SYNTHETIC CO-PILOT
+**ARCHITECTS: A N MOORE + GEMINI NEURAL MODELS**  
+*The architecture of this Archive is manifest through an iterative exchange between human analytical praxis and AI-driven precision.*
 
 ---
 
@@ -102,13 +78,13 @@ These archival logs and aural reflections are inspired by experiences within vir
 *   **Guest Speaking:** "The NASA Citizen Scientist: A Creative Volunteer’s Experience."
 *   **Literary Talks:** "The Art of the Dispatch: Contemporary Haikus as Visual Artifacts."
 *   **Creative Process:** "Aural Decryption: Transforming Soundscapes into Micro-Poetry."
-*   **Literary Advocacy:** "The Quiet Signal: Fostering Community Literacy through Independent Artifact Drops."
+*   **Strategic Signature:** "Merging passion and research to architect a meaningful life."
 
 **➡️ CONTACT:** [themoorearchive@proton.me](mailto:themoorearchive@proton.me)  
 **OFFICE:** 2389 Main St, Ste 100, Glastonbury, CT 06033
 
 ---
 **SIGNAL STATUS: 🟢 NOMINAL**  
-**PI: A N MOORE // (PENDING) THE MOORE SIGNAL ARCHIVE LLC**  
 
 > *“To architect a life where data has a soul, and science has a signature.”*
+
