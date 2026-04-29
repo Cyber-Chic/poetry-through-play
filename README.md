@@ -71,7 +71,7 @@ This is a non-commercial, independent literary work. All poetic works and aural 
 ---
 
 ### [ 🛰️ ARCHIVE_HUB ]
-**The Moore Signal Archive // Independent Inquiry Management**  
+**The Moore Signal Archive LLC // Independent Inquiry Management**  
 *Bridging the gap between digital code and physical reality.*
 
 **Engagements are accepted for the following specialized inquiries:**
