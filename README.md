@@ -1,4 +1,3 @@
-`[ IDENTIFIER: THE MOORE SIGNAL ] [ CLASSIFICATION: RESEARCH ] [ STATUS: NOMINAL ]`
 
 ---
 
@@ -39,26 +38,7 @@
 
 **Poetry Through Play** is a research series exploring the **"Frequency-First"** methodology. In this inquiry, original ambient soundscapes act as the primary catalyst for literary manifestation.
 
-
 ---
-
-### 📡 [ MSVI_LOG ] // SYSTEM AUDIT DATA
-**AUDIT TYPE: INDEPENDENT INQUIRY**
-
-> [!TIP]
-> **FIELD NOTE:** This repository serves as a verified Node in the Moore Signal Archive LLC. It tracks the persistence of a specific research signal across digital and physical frameworks.
-
-
-
-| ARCHIVAL METRIC | SYSTEM DATA |
-| :--- | :--- |
-| **RESEARCH_NODE** | [ ARCHIVE_ACTIVE ] |
-| **AUDIT_SEVERITY** | 🔵 INFORMATIONAL |
-| **DATA_INTEGRITY** | VETTED (LLC_FRAMEWORK) |
-| **PI_CREDENTIALS** | NYT_AD / MILLI_AWARD |
-
----
-
 
 ### 🛰️ THE INQUIRY: AURAL DECRYPTION
 The contemporary haikus in this collection are **decrypted** from synthesized frequencies. The project bridges the gap between abstract aural data and the human soul—capturing "Time Blips" through **Literary Sound Art.**
@@ -107,4 +87,3 @@ This is a non-commercial, independent literary work. All poetic works and aural 
 **SIGNAL STATUS: 🟢 NOMINAL**  
 
 > *“I want to live as though I traveled back in time... To this very moment.”*
-
