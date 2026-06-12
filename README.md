@@ -1,13 +1,8 @@
-
----
-
-
-
-
 # 📡 POETRY THROUGH PLAY // THE MOORE SIGNAL
-**Series Status:** 🟢 **ACTIVE // [ VOLUME 1 ]**
 
-<pre>
+**Series Status: 🟢 ACTIVE // [ VOLUME 1 ]**
+
+```text
           (      )
           /◕   ◕\
           \  ▿  /
@@ -24,66 +19,55 @@
    ______|       |_|______________
   [ ⚡  📡  MooreSignal  📡  ⚡ ]
   ««««««««««««««»»»»»»»»»»»»»»»»»»
-</pre>
-
-
-</div>
-
-*Figure 0.0: The MooreSignal unit in synchronization. ASCII Recalibration of the Archivist’s internal frequency.*
-
-# 🎹 Poetry Through Play // THE MOORE SIGNAL
-**STATUS: AURAL DECRYPTION LOGS // UNIT: MOORESIGNAL**
-
-<br>
-
-**Poetry Through Play** is a research series exploring the **"Frequency-First"** methodology. In this inquiry, original ambient soundscapes act as the primary catalyst for literary manifestation.
+```
+*Figure 0.0: The MooreSignal unit in synchronization.*
 
 ---
 
-### 🛰️ THE INQUIRY: AURAL DECRYPTION
-The contemporary haikus in this collection are **decrypted** from synthesized frequencies. The project bridges the gap between abstract aural data and the human soul—capturing "Time Blips" through **Literary Sound Art.**
+## 🎹 Project Objective
 
-*   📡 **[ SYNCHRONIZATION_GALLERY ](https://cyber-chic.github.io/poetry-through-play/)** — *View Volume 1 Logs*
-*   📑 **[ LITERARY ARCHIVE ](https://angies.poetry.blog/)** — *Traditional Portfolio*
+`Poetry Through Play` is a creative series where original music and ambient soundscapes serve as the primary inspiration for poetry. 
 
----
-
-### 🏛️ SYSTEM AUTHORITY & PROVENANCE
-**PRINCIPAL INVESTIGATOR:** A N MOORE  
-**SPECIALIZATIONS:** [Provenance Research](https://cyber-chic.github.io/themoorearchive/releases) // [Aural Synthesis](https://cyber-chic.github.io/poetry-through-play/)
-
-*   **Applied Praxis:** Rhythmic "Signals" are manifest through manual sequencing on **[Online Sequencer](https://onlinesequencer.net)**. The process utilizes **Atmospheric Observation**—where synthesized frequencies are either harvested from virtual experiences or manifest through direct, autonomous inquiry.
-*   **Virtual Laboratory:** These logs are inspired by reflections within virtual social landscapes, utilized here as a digital laboratory for observational inquiry.
-*   **Literary Credits:** Published in *The Literary Yard*, *The Drabble*, and *Rue Scribe*. Author of *A Powerful Giant*.
+*   **Aural Decryption:** Writing contemporary haikus and micro-poetry directly inspired by electronic frequencies.
+*   **Sound Design:** Translating mood, atmosphere, and virtual experiences into digital melodies.
+*   **Creative Sandbox:** Using online music sequencers and virtual landscapes as a sandbox to test new creative ideas.
 
 ---
 
+## 🛰️ Portfolio & Publications
 
-### 🛡️ SAFE HARBOR PROTOCOL
-This is a non-commercial, independent literary work. All poetic works and aural reflections are the original intellectual property of **The Moore Signal Archive**. This project does not use, claim ownership of, or distribute third-party game assets or software code.
+*   **[📡 Synchronization Gallery](https://cyber-chic.github.io/poetry-through-play/)** — Volume 1 Audio Logs
+*   **[📑 Literary Archive](https://angies.poetry.blog/)** — Written Portfolio
 
----
-
-### 🤖 SYNTHETIC CO-PILOT
-**ARCHITECTS: A N MOORE + GEMINI NEURAL MODELS**  
-*The architecture of this Archive is manifest through an iterative exchange between human analytical praxis and AI-driven precision.*
+### Literary Credits
+Original poetry featured in *The Literary Yard*, *The Drabble*, and *Rue Scribe*. Author of the book *A Powerful Giant*.
 
 ---
 
-### [ 🛰️ ARCHIVE_HUB ]
-**The Moore Signal Archive LLC // Independent Inquiry Management**  
-*Bridging the gap between digital code and physical reality.*
+## 🤖 Architecture & Collaboration
 
-**Engagements are accepted for the following specialized inquiries:**
-*   **Guest Speaking:** "The NASA Citizen Scientist: A Creative Volunteer’s Experience."
-*   **Literary Talks:** "The Art of the Dispatch: Contemporary Haikus as Visual Artifacts."
-*   **Creative Process:** "Aural Decryption: Transforming Soundscapes into Micro-Poetry."
-*   **Strategic Signature:** "Merging passion and research to architect a meaningful life."
+**Lead Architect:** A. N. Moore  
+**Co-Pilot Engine:** Gemini Neural Models  
 
-**➡️ CONTACT:** [themoorearchive@proton.me](mailto:themoorearchive@proton.me)  
-**OFFICE:** 2389 Main St, Ste 100, Glastonbury, CT 06033
+This repository represents a collaborative framework between human literary design and artificial intelligence to maintain a clean, minimalist digital aesthetic.
 
 ---
-**SIGNAL STATUS: 🟢 NOMINAL**  
 
-> *“I want to live as though I traveled back in time... To this very moment.”*
+## 🛡️ Project Protocols
+
+*   **Independent Work:** This is a non-commercial, independent literary project. 
+*   **Intellectual Property:** All poems, concepts, and audio logs are the original property of The Moore Signal Archive. This project does not use, distribute, or claim ownership of third-party game assets or software code.
+
+---
+
+**Managing Entity:** The Moore Signal Archive LLC (CT)  
+**Principal Investigator:** A. N. Moore  
+**Contact:** [themoorearchive@proton.me](mailto:themoorearchive@proton.me)  
+**Signal Status:** 🟢 NOMINAL  
+
+> *"I want to live as though I traveled back in time... To this very moment."*
+
+***
+<p align="center">
+  <small>© 2026 THE MOORE SIGNAL ARCHIVE LLC <br> 2389 Main St, Ste 100, Glastonbury, CT 06033</small>
+</p>
