@@ -1,73 +1,59 @@
-# 📡 POETRY THROUGH PLAY // THE MOORE SIGNAL
+<div align="center">
 
-**Series Status: 🟢 ACTIVE // [ VOLUME 1 ]**
+. * • . * ⭐ . 🛰 . ✨ ─────── ● ─────── ✦ ─────── 🌀 ─────── ✦ ─────── ● ─────── ✨
 
-```text
-          (      )
-          /◕   ◕\
-          \  ▿  /
-           \   /  
-           /   \
-          /|   |\
-         / |   | \ 🎤   ✧
-           |   |   |        ♬
-           |___|   |             🌟
-           |   |   |
-           |   |   |
-          /     \  |   ✧
-         (_______) |        ♬
-   ______|       |_|______________
-  [ ⚡  📡  MooreSignal  📡  ⚡ ]
-  ««««««««««««««»»»»»»»»»»»»»»»»»»
-```
-*Figure 0.0: The MooreSignal unit in synchronization.*
+# 📡 LAYERS OF THE HEART
+### *Poetry Through Play // Volume 01*
+**A Live Audio-Poetic Edition & Virtual Performance by The Moore Signal Archive™**
+
+**[ ▶ ENTER LIVE BROADCAST ](https://cyber-chic.github.io/poetry-through-play/)** &nbsp;│&nbsp; **[ 🌐 STUDIO TERMINAL ](https://bio.site/mooresignal)** &nbsp;│&nbsp; **[ 📑 LITERARY ARCHIVE ](https://cyber-chic.github.io/themoorearchive/hub)**
+
+`STATUS: 🟢 LIVE BROADCAST` &nbsp;•&nbsp; `POET: MOORESIGNAL` &nbsp;•&nbsp; `EDITION: VOL. 01`
+
+</div>
 
 ---
 
-## 🎹 Project Objective
+### 🎹 Curatorial Overview
 
-`Poetry Through Play` is a creative series where original music and ambient soundscapes serve as the primary inspiration for poetry. 
+Published by **The Moore Signal Archive LLC**, *Layers of the Heart* is an interactive digital anthology and virtual performance that pairs an original looping score composed by Moore—serving as the living pulse of the archive—with a curated sequence of contemporary haiku poetry.
 
-*   **Aural Decryption:** Writing contemporary haikus and micro-poetry directly inspired by electronic frequencies.
-*   **Sound Design:** Translating mood, atmosphere, and virtual experiences into digital melodies.
-*   **Creative Sandbox:** Using online music sequencers and virtual landscapes as a sandbox to test new creative ideas.
+Following the opening act, each poem corresponds to a physical **Special Edition**: contemporary artwork paired with a descriptive haiku and concealed across the Earth as part of an ongoing borderless treasure hunt.
 
 ---
 
-## 🛰️ Portfolio & Publications
+### 🛰️ Broadcast Architecture
 
-*   **[📡 Synchronization Gallery](https://cyber-chic.github.io/poetry-through-play/)** — Volume 1 Audio Logs
-*   **[📑 Literary Archive](https://angies.poetry.blog/)** — Written Portfolio
-
-### Literary Credits
-Original poetry featured in *The Literary Yard*, *The Drabble*, and *Rue Scribe*. Author of the book *A Powerful Giant*.
-
----
-
-## 🤖 Architecture & Collaboration
-
-**Lead Architect:** A. N. Moore  
-**Co-Pilot Engine:** Gemini Neural Models  
-
-This repository represents a collaborative framework between human literary design and artificial intelligence to maintain a clean, minimalist digital aesthetic.
+| Signal Layer | Format | Archival Function |
+| :--- | :--- | :--- |
+| **Archival Theme** | Audio / MP3 | Original score setting the atmospheric pulse of the edition. |
+| **Verse #001 // Overture** | The Opening Act | Featured poetry anchoring the virtual performance. |
+| **Special Editions (Verse #002+)** | Artistic Poetry Prints | Physical art drops concealed worldwide (e.g., *#ID-972411 — The Lone Tree, CT*). |
+| **Archival Sound Vault** | Bonus Broadcasts | Alternate studio melodies surfacing at random as the edition evolves. |
 
 ---
 
-## 🛡️ Project Protocols
+### 🖋️ Poet & Studio Credits
 
-*   **Independent Work:** This is a non-commercial, independent literary project. 
-*   **Intellectual Property:** All poems, concepts, and audio logs are the original property of The Moore Signal Archive. This project does not use, distribute, or claim ownership of third-party game assets or software code.
+* **Author & Composer:** A. N. Moore — Founder & Director, *The Moore Signal Archive LLC*
+* **Published Works:** Author of *A Powerful Giant*; original poetry featured in *The Literary Yard*, *The Drabble*, and *Rue Scribe*.
+* **Technical Architecture:** Built in collaboration with **Gemini Neural Models** to maintain a minimalist, dark-mode terminal aesthetic.
 
 ---
 
-**Managing Entity:** The Moore Signal Archive LLC (CT)  
-**Principal Investigator:** A. N. Moore  
-**Contact:** [themoorearchive@proton.me](mailto:themoorearchive@proton.me)  
-**Signal Status:** 🟢 NOMINAL  
+### 🛡️ Intellectual Property & Protocol
+
+This repository houses an independent literary, musical, and fine-art publication. All original poetry, audio compositions, Contemporary Special Editions, and visual concepts remain the intellectual property of **The Moore Signal Archive LLC** (`CC BY 4.0`).
 
 > *"I want to live as though I traveled back in time... To this very moment."*
 
-***
-<p align="center">
-  <small>© 2026 THE MOORE SIGNAL ARCHIVE LLC <br> 2389 Main St, Ste 100, Glastonbury, CT 06033</small>
-</p>
+<div align="center">
+
+---
+
+**The Moore Signal Archive LLC** // Glastonbury, CT 06033  
+Communications: **themoorearchive@proton.me**  
+<small>© 2026 The Moore Signal Archive LLC. All Rights Reserved.</small>
+
+</div>
+
