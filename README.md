@@ -16,7 +16,7 @@
 
 ### 🎹 Curatorial Overview
 
-Published by **The Moore Signal Archive LLC**, *Layers of the Heart* is an interactive digital anthology and virtual performance that pairs an original looping score composed by Moore—serving as the living pulse of the archive—with a curated sequence of contemporary haiku poetry.
+Published by **The Moore Signal Archive LLC**, *Layers of the Heart* is an interactive digital anthology and virtual performance that pairs a looping ambient frequency composed by Moore—serving as the living pulse of the archive—with a curated sequence of contemporary haiku poetry.
 
 Following the opening act, each poem corresponds to a physical **Special Edition**: contemporary artwork paired with a descriptive haiku and concealed across the Earth as part of an ongoing borderless treasure hunt.
 
