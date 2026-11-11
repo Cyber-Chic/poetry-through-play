@@ -1,171 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE MOORE SIGNAL // Poetry Through Play</title>
-    <style>
-        /* --- CORE TERMINAL STYLES --- */
-        body { 
-            background-color: #050505; 
-            color: #b0b0b0; 
-            font-family: 'Courier New', Courier, monospace; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            min-height: 100vh; 
-            margin: 0; 
-            padding: 40px 20px; 
-            line-height: 1.6; 
-        }
-        
-        header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 700px; }
-        header h1 { letter-spacing: 8px; color: #ffffff; margin-bottom: 10px; font-size: 1.5rem; text-shadow: 0 0 15px rgba(255,255,255,0.2); }
-        
-        .status-line { color: #00e5ff; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; }
-        .sys-info { font-size: 0.65rem; color: #555; line-height: 1.4; text-transform: uppercase; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE MOORE SIGNAL // Layers of the Heart</title>
+  <style>
+    :root {
+      --bg: #07090e;
+      --panel: #0d121d;
+      --neon: #00f0ff;
+      --accent: #b86bff;
+      --purple: #bf00ff;
+      --text: #e2e8f0;
+      --muted: #7c8ba1;
+    }
 
-        /* --- THE SETLIST (NEON BLUE) --- */
-        .setlist-container {
-            background: #0a0a0a;
-            border: 1px solid #00bfff;
-            box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
-            padding: 20px;
-            width: 100%;
-            max-width: 600px;
-            margin: 20px 0 40px 0;
-            font-size: 0.75rem;
-            border-radius: 4px;
-        }
-        .setlist-title {
-            color: #00e5ff;
-            border-bottom: 1px solid #1a1a1a;
-            padding-bottom: 8px;
-            margin-bottom: 15px;
-            letter-spacing: 3px;
-            font-weight: bold;
-        }
-        .track-entry {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-            color: #555;
-            letter-spacing: 1px;
-        }
-        .track-active { color: #ffffff; text-shadow: 0 0 5px rgba(255,255,255,0.3); }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+      line-height: 1.6;
+    }
 
-        /* --- NEON PLAY BUTTON --- */
-        .play-btn {
-            background: transparent;
-            border: 1px solid #00e5ff;
-            color: #00e5ff;
-            font-family: 'Courier New', monospace;
-            font-size: 0.65rem;
-            padding: 5px 10px;
-            cursor: pointer;
-            transition: 0.3s;
-            text-transform: uppercase;
-            box-shadow: 0 0 5px rgba(0, 229, 255, 0.2);
-        }
-        .play-btn:hover {
-            background: #00e5ff;
-            color: #000;
-            box-shadow: 0 0 15px #00e5ff;
-        }
-        .playing {
-            animation: pulse-button 1.5s infinite alternate;
-            background: rgba(0, 229, 255, 0.1);
-        }
-        @keyframes pulse-button {
-            from { box-shadow: 0 0 5px #00e5ff; }
-            to { box-shadow: 0 0 20px #00e5ff; }
-        }
+    .terminal {
+      max-width: 680px;
+      width: 100%;
+    }
 
-        /* --- ASCII UNIT (RECALIBRATED) --- */
-        .ascii-container {
-            width: fit-content;
-            border: 1px solid #ff00ff;
-            box-shadow: 0 0 15px rgba(255, 0, 255, 0.15);
-            padding: 25px;
-            margin: 40px 0;
-            background: #080808;
-            border-radius: 8px;
-        }
-        pre {
-            font-family: 'Courier New', monospace; 
-            font-size: 1.1rem; 
-            color: #ffffff; 
-            line-height: 1.1; /* Tighter line height to close the gap */
-            margin: 0;
-            text-shadow: 0 0 8px rgba(255, 0, 255, 0.4);
-            white-space: pre;
-        }
+    .header-meta {
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
 
-        /* --- LOG #002 SIGNAL BOX (NEON PURPLE) --- */
-        .cd-cover {
-            width: 100%; max-width: 300px; aspect-ratio: 1 / 1;
-            margin: 0 auto 30px auto; background: #000;
-            border: 1px solid #bf00ff;
-            box-shadow: 0 0 20px rgba(191, 0, 255, 0.2);
-            display: flex; align-items: center;
-            justify-content: center; position: relative; overflow: hidden;
-            border-radius: 4px;
-        }
-        .signal-portal-mini {
-            width: 80px; height: 80px; 
-            background: radial-gradient(circle, #bf00ff 0%, #000 75%);
-            border-radius: 50%;
-            animation: pulse-core 4s infinite ease-in-out;
-        }
-        @keyframes pulse-core {
-            0%, 100% { transform: scale(0.8); opacity: 0.3; box-shadow: 0 0 20px #bf00ff; }
-            50% { transform: scale(1.1); opacity: 0.7; box-shadow: 0 0 40px #bf00ff; }
-        }
-        .cd-label { font-size: 0.6rem; color: #bf00ff; position: absolute; bottom: 10px; right: 10px; letter-spacing: 2px; }
+    h1 {
+      color: var(--neon);
+      letter-spacing: 2px;
+      margin: 0 0 0.4rem 0;
+      font-size: 1.6rem;
+      text-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
+    }
 
-        /* --- GALLERY ITEMS --- */
-        .gallery-item { max-width: 700px; border-bottom: 1px solid #1a1a1a; padding: 60px 0; width: 100%; }
-        .haiku { 
-            font-family: 'Georgia', serif; 
-            font-style: italic; font-size: 1.3rem; 
-            color: #f0f0f0; text-align: center; 
-            margin: 30px 0; letter-spacing: 1px; line-height: 1.8; 
-        }
-        .metadata { font-size: 0.7rem; color: #00e5ff; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 2px; }
-        .archivist-note { font-size: 0.85rem; color: #666; border-left: 2px solid #00e5ff; padding-left: 15px; margin-top: 20px; }
+    .status-line {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
 
-        footer { margin-top: 80px; font-size: 0.65rem; color: #444; text-align: center; border-top: 1px solid #111; padding-top: 40px; width: 100%; max-width: 700px; }
-        a { color: #888; text-decoration: none; transition: 0.3s; }
-        a:hover { color: #00e5ff; text-shadow: 0 0 5px #00e5ff; }
-    </style>
+    /* ASCII Stage Art */
+    .stage-art {
+      color: #a5f3fc;
+      text-shadow: 0 0 8px rgba(184, 107, 255, 0.45);
+      font-size: 0.85rem;
+      line-height: 1.25;
+      overflow-x: auto;
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0 1.25rem 0;
+    }
+
+    /* Master Carrier Wave Player (Directly Below Stage) */
+    .carrier-box {
+      background: var(--panel);
+      border: 1px solid var(--neon);
+      border-radius: 6px;
+      padding: 1.25rem;
+      margin-bottom: 2.25rem;
+      box-shadow: 0 0 18px rgba(0, 240, 255, 0.12);
+      text-align: center;
+    }
+
+    .carrier-label {
+      font-size: 0.85rem;
+      color: var(--neon);
+      letter-spacing: 1.5px;
+      margin-bottom: 0.85rem;
+    }
+
+    .play-btn {
+      background: transparent;
+      color: var(--neon);
+      border: 1px solid var(--neon);
+      padding: 0.65rem 1.4rem;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .play-btn:hover, .play-btn.active {
+      background: var(--neon);
+      color: var(--bg);
+      box-shadow: 0 0 15px var(--neon);
+    }
+
+    /* Bonus Melody Button Variant */
+    .bonus-btn {
+      background: transparent;
+      color: #d8b4fe;
+      border: 1px solid var(--purple);
+      padding: 0.55rem 1.2rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .bonus-btn:hover, .bonus-btn.active {
+      background: var(--purple);
+      color: #ffffff;
+      box-shadow: 0 0 15px var(--purple);
+    }
+
+    /* Haiku Lyric Logs */
+    .section-title {
+      color: var(--accent);
+      font-size: 0.9rem;
+      letter-spacing: 1.5px;
+      border-bottom: 1px dashed #1e293b;
+      padding-bottom: 0.4rem;
+      margin: 2rem 0 1.25rem 0;
+    }
+
+    .lyric-log {
+      background: var(--panel);
+      border-left: 3px solid var(--accent);
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 1.25rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .log-header {
+      font-size: 0.8rem;
+      color: var(--neon);
+      margin-bottom: 0.6rem;
+      letter-spacing: 1px;
+    }
+
+    .haiku-text {
+      font-size: 1.05rem;
+      margin: 0.5rem 0;
+      color: #f8fafc;
+      letter-spacing: 0.4px;
+      line-height: 1.85;
+    }
+
+    .log-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+    }
+
+    /* Neon Purple Speaker Core */
+    .cd-cover {
+      width: 100%;
+      max-width: 260px;
+      aspect-ratio: 1 / 1;
+      margin: 1.25rem auto;
+      background: #000;
+      border: 1px solid var(--purple);
+      box-shadow: 0 0 20px rgba(191, 0, 255, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+
+    .signal-portal-mini {
+      width: 85px;
+      height: 85px;
+      background: radial-gradient(circle, #bf00ff 0%, #000 75%);
+      border-radius: 50%;
+      animation: pulse-core 4s infinite ease-in-out;
+    }
+
+    @keyframes pulse-core {
+      0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.35;
+        box-shadow: 0 0 20px #bf00ff;
+      }
+      50% {
+        transform: scale(1.15);
+        opacity: 0.85;
+        box-shadow: 0 0 45px #bf00ff;
+      }
+    }
+
+    .cd-label {
+      font-size: 0.65rem;
+      color: var(--purple);
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      letter-spacing: 2px;
+    }
+
+    /* Collapsible Vaults */
+    details.bonus-vault {
+      margin-top: 1.25rem;
+      border: 1px solid #1e293b;
+      border-radius: 6px;
+      padding: 1rem;
+      background: rgba(13, 18, 29, 0.5);
+    }
+
+    details.bonus-vault summary {
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+
+    details.bonus-vault summary:hover {
+      color: var(--neon);
+    }
+
+    footer {
+      margin-top: 2.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid #1e293b;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--neon);
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
+  <main class="terminal">
+    <!-- 1. HEADER -->
+    <header class="header-meta">
+      <h1>THE MOORE SIGNAL</h1>
+      <div class="status-line">
+        Status: 🟢 Live Broadcast &nbsp;//&nbsp; Edition: <em>Layers of the Heart</em>
+      </div>
+      <div class="status-line">
+        Poet: MooreSignal &nbsp;//&nbsp; Event: Virtual Performance &nbsp;//&nbsp; Volume: 01
+      </div>
+    </header>
 
-<header>
-    <h1>THE MOORE SIGNAL</h1>
-    <p class="status-line">Status: 🟢 Transmission Active</p>
-    <div class="sys-info">Unit: MooreSignal // Source: Virtual Performance // Protocol: High-Sync</div>
-</header>
+    <!-- 2. MASTER CARRIER LOOP (TOP ACTION) -->
+    <section class="carrier-box" style="margin-bottom: 1.5rem;">
+      <div class="carrier-label">📡 Layers of the Heart // Archival Theme</div>
+      <button id="carrierBtn" class="play-btn" type="button">[ ▶ LIVE BROADCAST ]</button>
+      <!-- Replace with your exact filename inside your GitHub audio folder -->
+      <audio id="carrierAudio" src="audio/smoothly-melting-beat.mp3" preload="auto" loop></audio>
+    </section>
 
-<div class="setlist-container">
-    <div class="setlist-title">📡 CURRENT SETLIST</div>
-    
-    <div class="track-entry track-active">
-        <span>01. SMOOTHLY MELTING BEAT</span>
-        <!-- UPDATED: Now calls toggleSignal instead of toggleAudio -->
-        <button onclick="toggleSignal(this, 'log001', 'audio/smooth.mp3')" class="play-btn">
-            [ ▶ INITIALIZE ]
-        </button>
-    </div>
-    
-    <div class="track-entry"><span>02. [ DATA_ENCRYPTED ]</span><span>[ PENDING... ]</span></div>
-    <div class="track-entry" style="opacity: 0.2;"><span>03. SILENCE_REFLECTIVE</span><span>[ STANDBY ]</span></div>
-</div>
-
-
-<div class="ascii-container">
-<pre>
+    <!-- 3. ASCII STAGE CENTERPIECE -->
+    <div style="background: rgba(13, 18, 29, 0.45); border: 1px solid #1e293b; border-radius: 6px; padding: 1.25rem 0.5rem; margin-bottom: 1.5rem;">
+      <pre class="stage-art" style="margin: 0;">
           (      )
           /◕   ◕\
           \  ▿  /
@@ -182,95 +279,170 @@
    ______|       |_|______________
   [ ⚡  📡  MooreSignal  📡  ⚡ ]
   ««««««««««««««»»»»»»»»»»»»»»»»»»
-</pre>
-</div>
-
-<div class="gallery-item" id="log-001">
-    <div class="metadata">LOG #001 // SMOOTHLY MELTING BEAT</div>
-    <div class="haiku">
-        Submerged in this sound<br>
-        Blending my soul with rhythm—<br>
-        Melting in the beat.
-    </div>
-    
-    <!-- THE MINI TERMINAL BUTTON -->
-    <div style="text-align: center; margin-top: 20px;">
-        <button onclick="toggleSignal(this, 'audio-log-001', 'audio/smooth.mp3')" class="play-btn">
-            [ ▶ INITIALIZE LOG #001 ]
-        </button>
+      </pre>
     </div>
 
-    <div class="archivist-note">
-        <strong>Archivist’s Log:</strong> Style ~ Pop | Frequency: High-Sync | Ref: 2026.02.18
-    </div>
-</div>
+    <!-- 4. CONCEPT EXPLANATION DROPDOWN -->
+    <details class="concept-guide" style="margin: 0 0 2rem 0; border: 1px solid #1e293b; border-left: 3px solid #00f0ff; border-radius: 6px; padding: 0.9rem 1.2rem; background: rgba(13, 18, 29, 0.85);">
+      <summary style="cursor: pointer; color: #00f0ff; font-size: 0.82rem; font-weight: bold; letter-spacing: 1.2px;">
+        [ ? ABOUT THIS EDITION // HOW TO EXPERIENCE ]
+      </summary>
+
+      <div style="margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px dashed #1e293b;">
+        <p style="font-size: 0.88rem; color: #e2e8f0; margin: 0 0 1rem 0; line-height: 1.75;">
+          <strong style="color: #00f0ff; letter-spacing: 0.5px;">A Live Audio-Poetic Edition &amp; Virtual Performance:</strong> Published by <em>The Moore Signal Archive</em>, this interactive anthology pairs an original looping score composed by the author—serving as the living pulse of the archive—with a curated sequence of haiku poetry.
+        </p>
+
+        <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0 0 1rem 0; line-height: 1.75;">
+          Following the opening overture poem, each verse corresponds to a unique <strong style="color: #d8b4fe;">Special Edition</strong>: authentic artwork paired with its descriptive haiku and concealed across the Earth as part of an ongoing treasure hunt. Additional melodies may surface at random as bonus tracks, setting new tones as the anthology evolves.
+        </p>
+
+        <p style="font-size: 0.82rem; color: #7dd3fc; margin: 0; padding: 0.65rem 0.85rem; background: rgba(0, 240, 255, 0.06); border-radius: 4px; line-height: 1.6;">
+          <strong>Broadcast Signal:</strong> Press play to enter the live performance, then scroll down to read each archival verse.
+        </p>
+      </div>
+    </details>
 
 
-<div class="gallery-item" id="log-002">
-    <div class="metadata">LOG ENCRYPTED // PENDING TRANSMISSION</div>
-    <div class="cd-cover">
+
+
+
+        <!-- 5. DECODED HAIKU LYRICS STREAM -->
+    <div class="section-title">📜 BROADCAST // POETRY LYRICS</div>
+
+    <!-- VERSE #001 (OVERTURE + PULSING PURPLE SPEAKER + EXPANDABLE LYRICS STREAM) -->
+    <article class="lyric-log" style="border-left: 3px solid var(--purple); box-shadow: 0 0 24px rgba(191, 0, 255, 0.08);">
+      <div class="log-header" style="display: flex; justify-content: space-between; align-items: center;">
+        <span>VERSE #001 // OVERTURE</span>
+        <span style="color: #d8b4fe; font-size: 0.72rem; letter-spacing: 1.5px;">● SIGNAL LIVE</span>
+      </div>
+
+      <!-- PULSING PURPLE SPEAKER CORE -->
+      <div class="cd-cover" style="margin: 1.25rem auto 1.4rem auto;">
         <div class="signal-portal-mini"></div>
         <div class="cd-label">MOORE_SIGNAL // VOL. 01</div>
-    </div>
-    <div class="haiku" style="color: #333;">
-        The rhythm's adrift.<br>
-        Pulsing through tomorrow's heart.<br>
-        — Manifesting soon —
-    </div>
-    <div class="archivist-note">
-        <strong>Status:</strong> Analyzing frequencies of the signal. Stay tuned.
-    </div>
-</div>
+      </div>
 
-<footer>
-    <p>Styling & Performance by The Archivist.</p>
-    <p><a href="https://github.com/Cyber-Chic/poetry-through-play">← Return to Terminal</a></p>
-</footer>
+      <p class="haiku-text" style="text-align: center; font-size: 1.1rem;">
+        Submerged in this sound<br />
+        Blending my soul with rhythm—<br />
+        Melting in the beat.
+      </p>
 
-<script>
-    let audioCtx, sources = {}, buffers = {};
+      <div class="log-meta" style="text-align: center; margin-bottom: 1.25rem;">
+        Introduction: The Heart of This Edition // Published: 2026.02.18
+      </div>
 
-    async function toggleSignal(btn, id, filePath) {
-        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      <!-- EXPANDABLE LYRICS STREAM NESTED INSIDE VERSE #001 -->
+      <details class="bonus-vault" style="margin-top: 0.5rem; border: 1px dashed #2e1065; border-left: 3px solid var(--accent); background: rgba(7, 9, 14, 0.65);">
+        <summary style="color: var(--accent); font-weight: bold;">[ 📜 STREAM // MORE LYRICS ]</summary>
 
-        // IF THE SIGNAL IS ACTIVE, STOP IT
-        if (sources[id]) {
-            sources[id].stop();
-            delete sources[id];
-            btn.textContent = "[ ▶ INITIALIZE LOG ]";
-            btn.classList.remove('playing');
-            return;
-        }
+        <!-- VERSE #002: THE LONE TREE -->
+        <article class="lyric-log" style="margin-top: 1.1rem; background: var(--panel);">
+          <div class="log-header">VERSE #002 // THE LONE TREE</div>
+          <p class="haiku-text">
+            This lone tree whispers.<br />
+            Contemplating talks of peace.<br />
+            Breathing in the wind.
+          </p>
+          <div class="log-meta">Special Edition Release: #ID-972411 // Free Little Art Gallery [ CT ] // Dispatched: 2026.02.27</div>
+        </article>
 
-        // STOP ALL OTHER SIGNALS (SILENCE PROTOCOL)
-        Object.keys(sources).forEach(key => {
-            sources[key].stop();
-            delete sources[key];
-        });
-        document.querySelectorAll('.play-btn').forEach(b => {
-            b.textContent = "[ ▶ INITIALIZE LOG ]";
-            b.classList.remove('playing');
-        });
+        <!-- VERSE #003: SIGNAL LOST -->
+        <article class="lyric-log" style="margin-bottom: 0; border-left-color: var(--purple); background: rgba(13, 18, 29, 0.7); text-align: center;">
+          <div class="log-header" style="color: #d8b4fe;">VERSE #003 // SIGNAL LOST</div>
+          <p class="haiku-text" style="color: #c4b5fd;">
+            The rhythm's adrift.<br />
+            Pulsing through tomorrow's heart.<br />
+            — Manifesting soon —
+          </p>
+          <div class="log-meta">Status: Stay tuned for new editions.</div>
+        </article>
+      </details>
+    </article>
 
-        // LOAD AND DECODE THE FREQUENCY
-        if (!buffers[id]) {
-            const res = await fetch(filePath);
-            const ab = await res.arrayBuffer();
-            buffers[id] = await audioCtx.decodeAudioData(ab);
-        }
-
-        // START THE INSTANT LOOP
-        const source = audioCtx.createBufferSource();
-        source.buffer = buffers[id];
-        source.loop = true;
-        source.connect(audioCtx.destination);
-        source.start(0);
+    <!-- 6. BONUS MELODIES VAULT ("2ND LAYER OF THE HEART") -->
+    <details class="bonus-vault" style="margin-top: 1.25rem; border-left: 3px solid var(--purple);">
+      <summary style="color: #d8b4fe; font-weight: bold;">[ + BONUS MELODIES // ARCHIVAL SOUND VAULT ]</summary>
+      
+      <div style="margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px dashed #1e293b;">
+        <p style="font-size: 0.84rem; color: var(--muted); margin: 0 0 1.1rem 0; letter-spacing: 0.3px;">
+          <span style="color: var(--purple);">•</span> <strong style="color: #c4b5fd;">Alternate Studio Broadcast</strong> // Stay tuned for new melodies.
+        </p>
         
-        sources[id] = source;
-        btn.textContent = "[ ⏸ STABILIZE SIGNAL ]";
-        btn.classList.add('playing');
-    }
-</script>
+        <article class="lyric-log" style="margin: 0; padding: 1.4rem 1.25rem; border-left: 3px solid var(--purple); background: rgba(7, 9, 14, 0.75); text-align: center;">
+          <div class="log-header" style="color: #d8b4fe; margin-bottom: 1rem; font-size: 0.85rem;">
+            MELODY #002 // 2nd Layer of the Heart
+          </div>
+     
+          <button id="bonusBtn1" class="bonus-btn" type="button">[ ▶ PLAY MELODY #002 ]</button>
+          <audio id="bonusAudio1" src="audio/tma-tango-01.mp3" preload="auto" loop></audio>
+        </article>
+      </div>
+    </details>
 
+
+
+    <footer>
+      <p>Styling &amp; Performance by The Archivist // The Moore Signal Archive LLC</p>
+      <p><a href="https://bio.site/mooresignal">← Return to Terminal</a></p>
+    </footer>
+  </main>
+
+  <script>
+    const carrierBtn = document.getElementById('carrierBtn');
+    const carrierAudio = document.getElementById('carrierAudio');
+    const bonusBtn1 = document.getElementById('bonusBtn1');
+    const bonusAudio1 = document.getElementById('bonusAudio1');
+
+    let carrierPlaying = false;
+    let bonus1Playing = false;
+
+    function stopBonus1() {
+      bonusAudio1.pause();
+      bonus1Playing = false;
+      bonusBtn1.textContent = '[ ▶ PLAY MELODY #002 ]';
+      bonusBtn1.classList.remove('active');
+    }
+
+    function stopCarrier() {
+      carrierAudio.pause();
+      carrierPlaying = false;
+      carrierBtn.textContent = '[ ▶ LIVE BROADCAST ]';
+      carrierBtn.classList.remove('active');
+    }
+
+    carrierBtn.addEventListener('click', async () => {
+      if (!carrierPlaying) {
+        if (bonus1Playing) stopBonus1();
+        try {
+          await carrierAudio.play();
+        } catch (err) {
+          console.warn('Carrier audio missing or blocked:', err);
+        }
+        carrierPlaying = true;
+        carrierBtn.textContent = '[ ⏸ BROADCASTING // LOOPING ]';
+        carrierBtn.classList.add('active');
+      } else {
+        stopCarrier();
+      }
+    });
+
+    bonusBtn1.addEventListener('click', async () => {
+      if (!bonus1Playing) {
+        if (carrierPlaying) stopCarrier();
+        try {
+          await bonusAudio1.play();
+        } catch (err) {
+          console.warn('Bonus audio missing or blocked:', err);
+        }
+        bonus1Playing = true;
+        bonusBtn1.textContent = '[ ⏸ MELODY #002 ACTIVE ]';
+        bonusBtn1.classList.add('active');
+      } else {
+        stopBonus1();
+      }
+    });
+  </script>
 </body>
 </html>
