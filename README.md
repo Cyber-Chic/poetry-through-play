@@ -26,8 +26,8 @@ Following the opening act, each poem corresponds to a physical **Special Edition
 
 | Signal Layer | Format | Archival Function |
 | :--- | :--- | :--- |
-| **Archival Theme** | Audio / MP3 | Original score setting the atmospheric pulse of the edition. |
-| **Verse #001 // Overture** | The Opening Act | Featured poetry anchoring the virtual performance. |
+| **Archival Theme** | Audio / MP3 |  looping ambient frequency setting the atmospheric pulse of the edition. |
+| **Verse #001 // Overture** | The Opening Act | Featured poetry anchoring the entire virtual performance. |
 | **Special Editions (Verse #002+)** | Artistic Poetry Prints | Physical art drops concealed worldwide (e.g., *#ID-972411 — The Lone Tree, CT*). |
 | **Archival Sound Vault** | Bonus Broadcasts | Alternate studio melodies surfacing at random as the edition evolves. |
 
