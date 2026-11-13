@@ -336,7 +336,7 @@
     </footer>
   </main>
 
-   <script>
+     <script>
     const AudioCtx = window.AudioContext || window.webkitAudioContext;
     const audioCtx = new AudioCtx();
     const bufferCache = {};
@@ -350,24 +350,28 @@
       return decoded;
     }
 
-    function createWebAudioLooper(src) {
+    function createWebAudioLooper(src, fadeSec = 0.15) {
       let running = false;
       let timerId = null;
       let activeNodes = [];
 
-      function scheduleCycle(buffer, startTime) {
+      function scheduleCycle(buffer, startTime, isFirst = false) {
         if (!running) return;
         const dur = buffer.duration;
-        const fade = Math.min(1.0, dur * 0.25); // Auto-scales crossfade for ~4s clips
-        const step = Math.max(0.5, dur - fade);
+        const fade = Math.min(fadeSec, dur * 0.25);
+        const step = Math.max(0.2, dur - fade);
 
         const source = audioCtx.createBufferSource();
         const gain = audioCtx.createGain();
         source.buffer = buffer;
 
-        // Smooth fade-in and fade-out on hardware clock
-        gain.gain.setValueAtTime(0.001, startTime);
-        gain.gain.linearRampToValueAtTime(1.0, startTime + fade);
+        if (isFirst) {
+          gain.gain.setValueAtTime(1.0, startTime);
+        } else {
+          gain.gain.setValueAtTime(0.001, startTime);
+          gain.gain.linearRampToValueAtTime(1.0, startTime + fade);
+        }
+
         gain.gain.setValueAtTime(1.0, startTime + dur - fade);
         gain.gain.linearRampToValueAtTime(0.001, startTime + dur);
 
@@ -382,8 +386,8 @@
         };
 
         const nextStart = startTime + step;
-        const delayMs = Math.max(50, (nextStart - audioCtx.currentTime - 0.3) * 1000);
-        timerId = setTimeout(() => scheduleCycle(buffer, nextStart), delayMs);
+        const delayMs = Math.max(30, (nextStart - audioCtx.currentTime - 0.25) * 1000);
+        timerId = setTimeout(() => scheduleCycle(buffer, nextStart, false), delayMs);
       }
 
       return {
@@ -391,7 +395,7 @@
           if (audioCtx.state === 'suspended') await audioCtx.resume();
           const buffer = await loadBuffer(src);
           running = true;
-          scheduleCycle(buffer, audioCtx.currentTime + 0.05);
+          scheduleCycle(buffer, audioCtx.currentTime + 0.05, true);
         },
         stop() {
           running = false;
@@ -404,8 +408,9 @@
       };
     }
 
-    const themeLoop = createWebAudioLooper('audio/smooth.mp3');
-    const melodyLoop = createWebAudioLooper('audio/tma-tango-01.mp3');
+    // Ambient theme gets a 1.0s lush crossfade; rhythmic tango gets a tight 0.12s seam
+    const themeLoop = createWebAudioLooper('audio/smooth.mp3', 1.0);
+    const melodyLoop = createWebAudioLooper('audio/tma-tango-01.mp3', 0.12);
 
     const carrierBtn = document.getElementById('carrierBtn');
     const bonusBtn1 = document.getElementById('bonusBtn1');
