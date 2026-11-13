@@ -336,61 +336,76 @@
     </footer>
   </main>
 
-    <script>
-    function createSeamlessLooper(src, fadeSeconds = 1.5) {
-      const decks = [new Audio(src), new Audio(src)];
-      decks.forEach(d => { d.preload = 'auto'; d.volume = 0; });
-      let active = 0, running = false, fading = false, rafId = null;
+   <script>
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    const audioCtx = new AudioCtx();
+    const bufferCache = {};
 
-      function tick() {
+    async function loadBuffer(src) {
+      if (bufferCache[src]) return bufferCache[src];
+      const res = await fetch(src);
+      const arrayBuf = await res.arrayBuffer();
+      const decoded = await audioCtx.decodeAudioData(arrayBuf);
+      bufferCache[src] = decoded;
+      return decoded;
+    }
+
+    function createWebAudioLooper(src) {
+      let running = false;
+      let timerId = null;
+      let activeNodes = [];
+
+      function scheduleCycle(buffer, startTime) {
         if (!running) return;
-        const curr = decks[active];
-        const next = decks[1 - active];
-        const rem = curr.duration - curr.currentTime;
+        const dur = buffer.duration;
+        const fade = Math.min(1.0, dur * 0.25); // Auto-scales crossfade for ~4s clips
+        const step = Math.max(0.5, dur - fade);
 
-        if (!isNaN(curr.duration) && curr.duration > fadeSeconds * 2 && rem <= fadeSeconds && !fading) {
-          fading = true;
-          next.currentTime = 0;
-          next.volume = 0;
-          next.play().catch(() => {});
-        }
+        const source = audioCtx.createBufferSource();
+        const gain = audioCtx.createGain();
+        source.buffer = buffer;
 
-        if (fading) {
-          const ratio = Math.max(0, Math.min(1, 1 - (rem / fadeSeconds)));
-          curr.volume = 1 - ratio;
-          next.volume = ratio;
-          if (rem <= 0.06) {
-            curr.pause();
-            curr.currentTime = 0;
-            curr.volume = 0;
-            next.volume = 1;
-            active = 1 - active;
-            fading = false;
-          }
-        }
-        rafId = requestAnimationFrame(tick);
+        // Smooth fade-in and fade-out on hardware clock
+        gain.gain.setValueAtTime(0.001, startTime);
+        gain.gain.linearRampToValueAtTime(1.0, startTime + fade);
+        gain.gain.setValueAtTime(1.0, startTime + dur - fade);
+        gain.gain.linearRampToValueAtTime(0.001, startTime + dur);
+
+        source.connect(gain);
+        gain.connect(audioCtx.destination);
+        source.start(startTime);
+        source.stop(startTime + dur);
+
+        activeNodes.push({ source, gain });
+        source.onended = () => {
+          activeNodes = activeNodes.filter(n => n.source !== source);
+        };
+
+        const nextStart = startTime + step;
+        const delayMs = Math.max(50, (nextStart - audioCtx.currentTime - 0.3) * 1000);
+        timerId = setTimeout(() => scheduleCycle(buffer, nextStart), delayMs);
       }
 
       return {
         async start() {
+          if (audioCtx.state === 'suspended') await audioCtx.resume();
+          const buffer = await loadBuffer(src);
           running = true;
-          fading = false;
-          decks[active].currentTime = 0;
-          decks[active].volume = 1;
-          await decks[active].play();
-          rafId = requestAnimationFrame(tick);
+          scheduleCycle(buffer, audioCtx.currentTime + 0.05);
         },
         stop() {
           running = false;
-          fading = false;
-          if (rafId) cancelAnimationFrame(rafId);
-          decks.forEach(d => { d.pause(); d.currentTime = 0; d.volume = 0; });
+          if (timerId) clearTimeout(timerId);
+          activeNodes.forEach(({ source }) => {
+            try { source.stop(); } catch (e) {}
+          });
+          activeNodes = [];
         }
       };
     }
 
-    const themeLoop = createSeamlessLooper('audio/smooth.mp3', 1.5);
-    const melodyLoop = createSeamlessLooper('audio/tma-tango-01.mp3', 1.5);
+    const themeLoop = createWebAudioLooper('audio/smooth.mp3');
+    const melodyLoop = createWebAudioLooper('audio/tma-tango-01.mp3');
 
     const carrierBtn = document.getElementById('carrierBtn');
     const bonusBtn1 = document.getElementById('bonusBtn1');
@@ -418,14 +433,18 @@
         resetUI();
       } else {
         resetUI();
+        statusLabel.textContent = '📡 TUNING SIGNAL...';
         try {
           await themeLoop.start();
           activeTrack = 'theme';
           carrierBtn.textContent = '[ ⏸ ARCHIVAL THEME // LIVE ]';
           carrierBtn.classList.add('active');
           earthOrb.classList.add('is-live');
-          statusLabel.textContent = '📡 LIVE // Archival Theme (Seamless Loop)';
-        } catch (e) { console.warn(e); }
+          statusLabel.textContent = '📡 LIVE // Archival Theme (Continuous Loop)';
+        } catch (e) {
+          console.warn(e);
+          resetUI();
+        }
       }
     });
 
@@ -434,6 +453,7 @@
         resetUI();
       } else {
         resetUI();
+        statusLabel.textContent = '📡 TUNING SIGNAL...';
         try {
           await melodyLoop.start();
           activeTrack = 'melody';
@@ -442,10 +462,12 @@
           earthOrb.classList.add('is-live');
           audioConsole.classList.add('playing-alt');
           statusLabel.textContent = '📡 LIVE // Melody #002 (2nd Layer)';
-        } catch (e) { console.warn(e); }
+        } catch (e) {
+          console.warn(e);
+          resetUI();
+        }
       }
     });
   </script>
 </body>
 </html>
-
